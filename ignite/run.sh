@@ -85,8 +85,8 @@ for workload in a b c d e f; do
 	for action in load run; do
 		echo "Running YCSB workload $workload $action..."
 		docker exec ignite_ycsb_1 \
-			./bin/ycsb load ignite -p hosts=node1 \
-			-s -P ./workloads/workloada \
+			./bin/ycsb load $VARIANT -p hosts=node1 \
+			-s -P ./workloads/workload$workload \
 			-p operationcount=$YCSB_OPERATION_COUNT \
 			-p recordcount=$YCSB_RECORD_COUNT \
 			-threads $YCSB_THREAD_COUNT | \
