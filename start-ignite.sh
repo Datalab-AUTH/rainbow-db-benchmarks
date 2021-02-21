@@ -25,11 +25,9 @@ run_test() {
     echo "YCSB recordcount: $YCSB_RECORD_COUNT"
     echo "YCSB threadcount: $YCSB_THREAD_COUNT"
 
-    docker-compose up --detach
-    docker exec -t fogify-db-benchmarks_ui_1 \
-        python3 /home/jovyan/work/ignite/run.py
-    docker-compose down
-    sleep 30 # give some time for the containers to actually go down
+    cd ignite
+    ./run.sh
+    cd ..
 }
 
 for REPLICATION in `seq $REPLICATIONS`; do
@@ -65,9 +63,7 @@ for REPLICATION in `seq $REPLICATIONS`; do
                                 if [[ $OPT == "-s" ]]; then
                                     echo "*** $VARIANT-$combination will be run ***"
                                 else
-                                    cd ignite
-                                    ./run.sh
-                                    cd ..
+                                    run_test
                                 fi
                             fi
                         done
