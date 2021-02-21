@@ -24,7 +24,7 @@ create_docker_compose() {
 	echo '      ZOO_SERVERS: "server.1=0.0.0.0:2888:3888"'
 	for i in `seq $NODES`; do
 		echo "  node$i:"
-		echo "    image: datalabauth/docker-ignite"
+		echo "    image: datalabauth/docker-ignite:zookeeper"
 		echo "    command: sh -c \"while true; do sleep 10; done\""
 		echo "    cap_add:"
 		echo "      - NET_ADMIN"
