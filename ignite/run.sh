@@ -17,6 +17,11 @@ create_docker_compose() {
 	echo '  ycsb:'
 	echo '    image: datalabauth/docker-ycsb'
 	echo '    command: /sleep.sh'
+	echo '  zookeeper:'
+	echo '    image: zookeeper:3.4'
+	echo '    environment:'
+	echo '      ZOO_MY_ID: "1"'
+	echo '      ZOO_SERVERS: "server.1=0.0.0.0:2888:3888"'
 	for i in `seq $NODES`; do
 		echo "  node$i:"
 		echo "    image: datalabauth/docker-ignite"
@@ -62,18 +67,10 @@ fi
 
 # apply configuration to nodes and start them
 for i in `seq $NODES`; do
-	# create the list of nodes to put into the configuration file.
-	# Current node goes first.
-	NODE_LIST="<value>node$i</value>"
-	for j in `seq $NODES`; do
-		if [ $j -ne $i ]; then
-			NODE_LIST="$NODE_LIST<value>node$j</value>"
-		fi
-	done
-	docker exec $( get_node_name $i ) \
-		sed -i "s|<!--IP_LIST-->|$NODE_LIST|" /$VARIANT.xml
 	docker exec $( get_node_name $i ) \
 		cp /$VARIANT.xml config/default-config.xml
+	docker exec $( get_node_name $i ) \
+		sh -c 'cp libs/optional/ignite-zookeeper/*.jar libs/'
 	docker exec $( get_node_name $i ) \
 		./run.sh &
 done
