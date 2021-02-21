@@ -53,10 +53,12 @@ for i in `seq $NODES`; do
 done
 
 # shape traffic for all nodes
-for i in `seq $NODES`; do
-	shape_traffic $i
-done
-sleep 3
+if [ $BANDWIDTH -ne 0 ]; then
+	for i in `seq $NODES`; do
+		shape_traffic $i
+	done
+	sleep 3
+fi
 
 # create the list of nodes to put into the configuration file
 NODE_LIST=""
