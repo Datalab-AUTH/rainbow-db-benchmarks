@@ -60,14 +60,16 @@ if [ $BANDWIDTH -ne 0 ]; then
 	sleep 3
 fi
 
-# create the list of nodes to put into the configuration file
-NODE_LIST=""
-for i in `seq $NODES`; do
-	export NODE_LIST="$NODE_LIST<value>node$i</value>"
-done
-
 # apply configuration to nodes and start them
 for i in `seq $NODES`; do
+	# create the list of nodes to put into the configuration file.
+	# Current node goes first.
+	NODE_LIST="<value>node$i</value>"
+	for j in `seq $NODES`; do
+		if [ $j -ne $i ]; then
+			NODE_LIST="$NODE_LIST<value>node$j</value>"
+		fi
+	done
 	docker exec $( get_node_name $i ) \
 		sed -i "s|<!--IP_LIST-->|$NODE_LIST|" /$VARIANT.xml
 	docker exec $( get_node_name $i ) \
