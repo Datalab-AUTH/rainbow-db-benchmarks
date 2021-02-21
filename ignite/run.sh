@@ -85,7 +85,7 @@ for workload in a b c d e f; do
 			-p operationcount=100 \
 			-p recordcount=100 \
 			-threads 4 | \
-			tee ../output/$VARIANT-$workload-$NODES-${BANDWIDTH}Mbps-${NETWORK_DELAY}ms-$YCSB_OPERATION_COUNT-$YCSB_RECORD_COUNT-$YCSB_THREAD_COUNT-$REPLICATION.out
+			tee ../output/$VARIANT-$workload-$NODES-${BANDWIDTH}Mbps-${NETWORK_DELAY}ms-$YCSB_OPERATION_COUNT-$YCSB_RECORD_COUNT-$YCSB_THREAD_COUNT-$action-$REPLICATION.out
 	done
 done
 
