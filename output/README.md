@@ -5,12 +5,12 @@ completed. The file names follow the pattern:
 ```
 DB-WORKLOAD-NODES-REPLICAS-BANDWIDTH-NETWORK_DELAY-OP_COUNT-REC_COUNT-THREAD_COUNT-ACTION-REPLICATION
 ```
-
 where:
 * `DB`: the database that was tested
 * `WORKLOAD`: the YCSB workload used
 * `NODES`: the total number of database nodes
-* `REPLICAS`: the number of slave nodes per master node
+* `REPLICAS`: the number of slave nodes per master node. Not present for
+  ignite
 * `BANDWIDTH`: the bandwidth allocated between nodes
 * `NETWORK_DELAY`: the network delay between nodes
 * `OP_COUNT`: the YCSB test operation count
