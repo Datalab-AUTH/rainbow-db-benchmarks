@@ -51,8 +51,8 @@ for REPLICATION in `seq $REPLICATIONS`; do
                                 exit 2
                             fi
                             # only run test if it hasn't run yet
-                            combination=$NODES-$BANDWIDTH
-                            combination=$combination-$NETWORK_DELAY
+                            combination=$NODES-${BANDWIDTH}Mbps
+                            combination=$combination-${NETWORK_DELAY}ms
                             combination=$combination-$YCSB_OPERATION_COUNT
                             combination=$combination-$YCSB_RECORD_COUNT
                             combination=$combination-$YCSB_THREAD_COUNT
