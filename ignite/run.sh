@@ -75,7 +75,7 @@ for i in `seq $NODES`; do
 done
 
 # wait a bit for nodes to start
-sleep $(( $NODES * 10 ))
+sleep $(( $NODES * 20 ))
 
 for workload in a b c d e f; do
 	for action in load run; do
