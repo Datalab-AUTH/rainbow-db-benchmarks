@@ -79,12 +79,13 @@ sleep $(( $NODES * 20 ))
 
 for workload in a b c d e f; do
 	for action in load run; do
+		echo "Running YCSB workload $workload $action..."
 		docker exec ignite_ycsb_1 \
 			./bin/ycsb load ignite -p hosts=node1 \
 			-s -P ./workloads/workloada \
-			-p operationcount=100 \
-			-p recordcount=100 \
-			-threads 4 | \
+			-p operationcount=$YCSB_OPERATION_COUNT \
+			-p recordcount=$YCSB_RECORD_COUNT \
+			-threads $YCSB_THREAD_COUNT | \
 			tee ../output/$VARIANT-$workload-$NODES-${BANDWIDTH}Mbps-${NETWORK_DELAY}ms-$YCSB_OPERATION_COUNT-$YCSB_RECORD_COUNT-$YCSB_THREAD_COUNT-$action-$REPLICATION.out
 	done
 done
