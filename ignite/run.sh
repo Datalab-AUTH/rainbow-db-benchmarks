@@ -83,7 +83,7 @@ sleep $(( $NODES * 20 ))
 
 for workload in a b c d e f; do
 	COMBINATION=$VARIANT-$workload-$NODES-${BANDWIDTH}Mbps-${NETWORK_DELAY}ms-$YCSB_OPERATION_COUNT-$YCSB_RECORD_COUNT-$YCSB_THREAD_COUNT
-	if [ ! -f ${COMBINATION}-load-${REPLICATION}.out ] || [ ! -f ${COMBINATION}-run-${REPLICATION}.out ]; then
+	if [ ! -f ../output/${COMBINATION}-load-${REPLICATION}.out ] || [ ! -f ../output/${COMBINATION}-run-${REPLICATION}.out ]; then
 		echo "Running YCSB $COMBINATION-$REPLICATION..."
 		docker exec ignite_ycsb_1 \
 			./bin/ycsb load $VARIANT -p hosts=node1 \
@@ -91,14 +91,14 @@ for workload in a b c d e f; do
 			-p operationcount=$YCSB_OPERATION_COUNT \
 			-p recordcount=$YCSB_RECORD_COUNT \
 			-threads $YCSB_THREAD_COUNT | \
-			tee ${COMBINATION}-load-${REPLICATION}.out
+			tee ../output/${COMBINATION}-load-${REPLICATION}.out
 		docker exec ignite_ycsb_1 \
 			./bin/ycsb run $VARIANT -p hosts=node1 \
 			-s -P ./workloads/workload$workload \
 			-p operationcount=$YCSB_OPERATION_COUNT \
 			-p recordcount=$YCSB_RECORD_COUNT \
 			-threads $YCSB_THREAD_COUNT | \
-			tee ${COMBINATION}-run-${REPLICATION}.out
+			tee ../output/${COMBINATION}-run-${REPLICATION}.out
 	fi
 done
 
