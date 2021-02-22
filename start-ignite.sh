@@ -57,12 +57,17 @@ for REPLICATION in `seq $REPLICATIONS`; do
                             combination=$combination-$YCSB_RECORD_COUNT
                             combination=$combination-$YCSB_THREAD_COUNT
                             combination=$combination-run-$REPLICATION
-                            if [ -f output/$VARIANT-f-$combination.out ]; then
-                                echo "*** $VARIANT-$combination already there. Skipping. ***"
-                            else
-                                if [[ $OPT == "-s" ]]; then
-                                    echo "*** $VARIANT-$combination will be run ***"
+                            TEST_RUN=0
+                            for workload in a b c d e f; do
+                                if [ -f output/$VARIANT-$workload-$combination.out ]; then
+                                    echo "*** $VARIANT-$workload-$combination already there. It will be skipped. ***"
                                 else
+                                    echo "*** $VARIANT-$workload-$combination will be run. ***"
+                                    TEST_RUN=1
+                                fi
+                            done
+                            if [[ $OPT != "-s" ]]; then
+                                if [ $TEST_RUN -eq 1 ]; then
                                     run_test
                                 fi
                             fi
