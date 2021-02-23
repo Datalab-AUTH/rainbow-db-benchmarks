@@ -1,11 +1,12 @@
 #!/bin/bash
 
-EMPTY_FILES_CMD='find ./ -name "*.out" -size 0 | wc -l'
-EMPTY_FILES=`$EMPTY_FILES_CMD`
+EMPTY_FILES=`find ./ -name "*.out" -size 0 | wc -l`
+echo "====================="
 echo "Empty files: $EMPTY_FILES"
-$EMPTY_FILES_CMD
-NO_RESULTS_CMD='grep -L OVERALL *.out | wc -l'
-NO_RESULTS=`$NO_RESULTS_CMD`
+echo "====================="
+find ./ -name "*.out" -size 0
+NO_RESULTS=`grep -L OVERALL *.out | wc -l`
+echo "==============================="
 echo "Files with no results: $NO_RESULTS"
-$NO_RESULTS_CMD
-
+echo "==============================="
+grep -L OVERALL *.out
