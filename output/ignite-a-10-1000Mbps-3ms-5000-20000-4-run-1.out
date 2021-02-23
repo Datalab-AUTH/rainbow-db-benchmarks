@@ -1,0 +1,1792 @@
+[01:05:51][INFO ][Thread-5] Start Ignite client node.
+[01:05:51][INFO ][Thread-5] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.7.0#20181130-sha1:256ae401
+>>> 2018 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[01:05:51][INFO ][Thread-5] Config URL: n/a
+[01:05:51][INFO ][Thread-5] IgniteConfiguration [igniteInstanceName=YCSB client node, pubPoolSize=12, svcPoolSize=12, callbackPoolSize=12, stripedPoolSize=12, sysPoolSize=12, mgmtPoolSize=4, igfsPoolSize=12, dataStreamerPoolSize=12, utilityCachePoolSize=12, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=12, igniteHome=null, igniteWorkDir=/tmp/ignite/work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@710726a3, nodeId=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41, marsh=BinaryMarshaller [], marshLocJobs=false, daemon=false, p2pEnabled=false, netTimeout=2000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$FirstConnectionPolicy@2dc72d08, enableForcibleNodeKill=false, enableTroubleshootingLog=false, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=6, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@6140ca7[Count = 1], stopping=false], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@764fdacc, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@3f079762, addrRslvr=null, encryptionSpi=org.apache.ignite.spi.encryption.noop.NoopEncryptionSpi@7798da11, clientMode=true, rebalanceThreadPoolSize=1, txCfg=TransactionConfiguration [txSerEnabled=false, dfltIsolation=REPEATABLE_READ, dfltConcurrency=PESSIMISTIC, dfltTxTimeout=0, txTimeoutOnPartitionMapExchange=0, pessimisticTxLogSize=0, pessimisticTxLogLinger=10000, tmLookupClsName=null, txManagerFactory=null, useJtaSync=false], cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, sysWorkerBlockedTimeout=null, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=ConnectorConfiguration [jettyPath=null, host=null, port=11211, noDelay=true, directBuf=false, sndBufSize=32768, rcvBufSize=32768, idleQryCurTimeout=600000, idleQryCurCheckFreq=60000, sndQueueLimit=0, selectorCnt=4, idleTimeout=7000, sslEnabled=false, sslClientAuth=false, sslCtxFactory=null, sslFactory=null, portRange=100, threadPoolSize=12, msgInterceptor=null], odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=null, activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=12, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], mvccVacuumThreadCnt=2, mvccVacuumFreq=5000, authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[01:05:51][INFO ][Thread-5] Daemon mode: off
+[01:05:51][INFO ][Thread-5] OS: Linux 4.9.0-11-amd64 amd64
+[01:05:51][INFO ][Thread-5] OS user: root
+[01:05:51][INFO ][Thread-5] PID: 145
+[01:05:51][INFO ][Thread-5] Language runtime: Java Platform API Specification ver. 1.8
+[01:05:51][INFO ][Thread-5] VM information: OpenJDK Runtime Environment 1.8.0_282-b08 Oracle Corporation OpenJDK 64-Bit Server VM 25.282-b08
+[01:05:51][INFO ][Thread-5] VM total memory: 14.0GB
+[01:05:51][INFO ][Thread-5] Remote Management [restart: off, REST: off, JMX (remote: off)]
+[01:05:51][INFO ][Thread-5] Logger: Log4J2Logger [quiet=false, config=file:/opt/ycsb-0.17.0/ignite-binding/lib/ignite-binding-0.17.0.jar!/log4j2.xml]
+[01:05:51][INFO ][Thread-5] IGNITE_HOME=null
+[01:05:51][INFO ][Thread-5] VM arguments: []
+[01:05:51][INFO ][Thread-5] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[01:05:51][WARN ][Thread-5] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[01:05:52][INFO ][Thread-5] Configured plugins:
+[01:05:52][INFO ][Thread-5]   ^-- None
+[01:05:52][INFO ][Thread-5] 
+[01:05:52][INFO ][Thread-5] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED]]]]
+[01:05:52][INFO ][Thread-5] Successfully bound communication NIO server to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0, selectorsCnt=6, selectorSpins=0, pairedConn=false]
+[01:05:52][WARN ][Thread-5] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[01:05:52][WARN ][Thread-5] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[01:05:52][WARN ][Thread-5] Collision resolution is disabled (all jobs will be activated upon arrival).
+[01:05:52][INFO ][Thread-5] Security status [authentication=off, tls/ssl=off]
+[01:05:52][INFO ][Thread-5] Evict partition permits=3
+[01:05:52][INFO ][Thread-5] Client connector processor has started on TCP port 10800
+[01:05:53][INFO ][Thread-5] REST protocols do not start on client node. To start the protocols on client node set '-DIGNITE_REST_START_ON_CLIENT=true' system property.
+[01:05:53][INFO ][Thread-5] Non-loopback local IPs: 192.168.96.8
+[01:05:53][INFO ][Thread-5] Enabled local MACs: 0242C0A86008
+[01:06:00][INFO ][disco-notifier-worker-#46%YCSB client node%] Assigned mvcc coordinator [crd=MvccCoordinator [nodeId=99a95be9-18d1-49ea-951b-d793d0e2c2ca, crdVer=1613955711771, topVer=AffinityTopologyVersion [topVer=14, minorTopVer=0]], crdNode=TcpDiscoveryNode [id=99a95be9-18d1-49ea-951b-d793d0e2c2ca, addrs=[127.0.0.1, 192.168.96.2], sockAddrs=[/127.0.0.1:47500, 08c3e5d6f4bb/192.168.96.2:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1613955960343, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false]]
+[01:06:00][WARN ][disco-event-worker-#47%YCSB client node%] Node FAILED: TcpDiscoveryNode [id=74749894-cbbb-47d7-9e23-49bf67211f26, addrs=[127.0.0.1, 192.168.96.9], sockAddrs=[1aab6c6fe331/192.168.96.9:47500, /127.0.0.1:47500], discPort=47500, order=6, intOrder=5, lastExchangeTime=1613955960343, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false]
+[01:06:00][INFO ][disco-event-worker-#47%YCSB client node%] Topology snapshot [ver=15, locNode=e7bd26c3, servers=8, clients=1, state=ACTIVE, CPUs=108, offheap=100.0GB, heap=22.0GB]
+[01:06:00][INFO ][exchange-worker-#48%YCSB client node%] Started exchange init [topVer=AffinityTopologyVersion [topVer=14, minorTopVer=0], mvccCrd=MvccCoordinator [nodeId=99a95be9-18d1-49ea-951b-d793d0e2c2ca, crdVer=1613955711771, topVer=AffinityTopologyVersion [topVer=14, minorTopVer=0]], mvccCrdChange=true, crd=false, evt=NODE_JOINED, evtNode=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41, customEvt=null, allowMerge=true]
+[01:06:00][INFO ][exchange-worker-#48%YCSB client node%] Components activation performed in 0 ms.
+[01:06:15][WARN ][Thread-5] Failed to wait for initial partition map exchange. Possible reasons are: 
+  ^-- Transactions in deadlock.
+  ^-- Long running transactions (ignore if this is the case).
+  ^-- Unreleased explicit locks.
+[01:06:15][WARN ][jvm-pause-detector-worker] Possible too long JVM pause: 14560 milliseconds.
+[01:06:15][ERROR][tcp-client-disco-msg-worker-#4%YCSB client node%] Blocked system-critical thread has been detected. This can lead to cluster-wide undefined behaviour [threadName=grid-nio-worker-tcp-comm-2, blockedFor=14s]
+[01:06:15][WARN ][tcp-client-disco-msg-worker-#4%YCSB client node%] Thread [name="grid-nio-worker-tcp-comm-2-#34%YCSB client node%", id=53, state=RUNNABLE, blockCnt=0, waitCnt=0]
+
+[01:06:15][INFO ][grid-nio-worker-tcp-comm-0-#32%YCSB client node%] Accepted incoming communication connection [locAddr=/192.168.96.8:47100, rmtAddr=/192.168.96.2:49368]
+[01:06:15][ERROR][tcp-client-disco-msg-worker-#4%YCSB client node%] Critical system error detected. Will be handled accordingly to configured handler [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED]]], failureCtx=FailureContext [type=SYSTEM_WORKER_BLOCKED, err=class o.a.i.IgniteException: GridWorker [name=grid-nio-worker-tcp-comm-2, igniteInstanceName=YCSB client node, finished=false, heartbeatTs=1613955960936]]]
+org.apache.ignite.IgniteException: GridWorker [name=grid-nio-worker-tcp-comm-2, igniteInstanceName=YCSB client node, finished=false, heartbeatTs=1613955960936]
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1831) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1826) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.internal.worker.WorkersRegistry.onIdle(WorkersRegistry.java:233) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.internal.util.worker.GridWorker.onIdle(GridWorker.java:297) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.spi.discovery.tcp.ClientImpl$MessageWorker.body(ClientImpl.java:1668) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.spi.discovery.tcp.ClientImpl$1.body(ClientImpl.java:304) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.spi.IgniteSpiThread.run(IgniteSpiThread.java:62) [ignite-core-2.7.0.jar:2.7.0]
+[01:06:15][WARN ][tcp-client-disco-msg-worker-#4%YCSB client node%] No deadlocked threads detected.
+[01:06:15][WARN ][tcp-client-disco-msg-worker-#4%YCSB client node%] Thread dump at 2021/02/22 01:06:15 UTC
+Thread [name="pub-#51%YCSB client node%", id=79, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-#50%YCSB client node%", id=78, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@db6d135, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#49%YCSB client node%", id=77, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="exchange-worker-#48%YCSB client node%", id=76, state=RUNNABLE, blockCnt=6, waitCnt=0]
+        at java.lang.ClassLoader.defineClass1(Native Method)
+        at java.lang.ClassLoader.defineClass(ClassLoader.java:756)
+        at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+        at java.net.URLClassLoader.defineClass(URLClassLoader.java:468)
+        at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+        - locked java.lang.Object@1431af0c
+        at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+        at o.a.i.i.processors.cache.GridCacheContext.<init>(GridCacheContext.java:394)
+        at o.a.i.i.processors.cache.GridCacheProcessor.createCache(GridCacheProcessor.java:1610)
+        at o.a.i.i.processors.cache.GridCacheProcessor.prepareCacheStart(GridCacheProcessor.java:2146)
+        at o.a.i.i.processors.cache.GridCacheProcessor.startCachesOnLocalJoin(GridCacheProcessor.java:2023)
+        at o.a.i.i.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.initCachesOnLocalJoin(GridDhtPartitionsExchangeFuture.java:924)
+        at o.a.i.i.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.init(GridDhtPartitionsExchangeFuture.java:766)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$ExchangeWorker.body0(GridCachePartitionExchangeManager.java:2667)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$ExchangeWorker.body(GridCachePartitionExchangeManager.java:2539)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="ignite-update-notifier-timer", id=75, state=TIMED_WAITING, blockCnt=1, waitCnt=3]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.processors.cluster.ClusterProcessor$UpdateNotifierTimerTask.safeRun(ClusterProcessor.java:686)
+        at o.a.i.i.util.GridTimerTask.run(GridTimerTask.java:34)
+        at java.util.TimerThread.mainLoop(Timer.java:555)
+        at java.util.TimerThread.run(Timer.java:505)
+
+Thread [name="upd-ver-checker", id=74, state=RUNNABLE, blockCnt=0, waitCnt=1]
+        at java.lang.CharacterDataLatin1.digit(CharacterDataLatin1.java:164)
+        at java.lang.Character.digit(Character.java:6599)
+        at java.lang.Character.digit(Character.java:6547)
+        at java.lang.Integer.parseInt(Integer.java:578)
+        at java.math.BigInteger.<init>(BigInteger.java:479)
+        at sun.security.ec.CurveDB.bi(CurveDB.java:119)
+        at sun.security.ec.CurveDB.add(CurveDB.java:138)
+        at sun.security.ec.CurveDB.<clinit>(CurveDB.java:288)
+        at sun.security.ec.SunECEntries.putEntries(SunECEntries.java:72)
+        at sun.security.ec.SunEC.<init>(SunEC.java:76)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at java.lang.Class.newInstance(Class.java:442)
+        at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:221)
+        at sun.security.jca.ProviderConfig$2.run(ProviderConfig.java:206)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at sun.security.jca.ProviderConfig.doLoadProvider(ProviderConfig.java:206)
+        at sun.security.jca.ProviderConfig.getProvider(ProviderConfig.java:187)
+        - locked sun.security.jca.ProviderConfig@1ea7157c
+        at sun.security.jca.ProviderList.getProvider(ProviderList.java:233)
+        at sun.security.jca.ProviderList.getService(ProviderList.java:331)
+        at sun.security.jca.GetInstance.getInstance(GetInstance.java:157)
+        at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+        at javax.net.ssl.SSLContext.getDefault(SSLContext.java:96)
+        - locked java.lang.Class@20f067f0
+        at javax.net.ssl.SSLSocketFactory.getDefault(SSLSocketFactory.java:122)
+        - locked java.lang.Class@1bf435a2
+        at javax.net.ssl.HttpsURLConnection.getDefaultSSLSocketFactory(HttpsURLConnection.java:332)
+        at javax.net.ssl.HttpsURLConnection.<init>(HttpsURLConnection.java:289)
+        at sun.net.www.protocol.https.HttpsURLConnectionImpl.<init>(HttpsURLConnectionImpl.java:99)
+        at sun.net.www.protocol.https.Handler.openConnection(Handler.java:62)
+        at sun.net.www.protocol.https.Handler.openConnection(Handler.java:57)
+        at java.net.URL.openConnection(URL.java:1002)
+        at o.a.i.i.processors.cluster.HttpIgniteUpdatesChecker.getUpdates(HttpIgniteUpdatesChecker.java:59)
+        at o.a.i.i.processors.cluster.GridUpdateNotifier$UpdateChecker.body(GridUpdateNotifier.java:268)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.i.processors.cluster.GridUpdateNotifier$1.run(GridUpdateNotifier.java:113)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="disco-event-worker-#47%YCSB client node%", id=73, state=WAITING, blockCnt=10, waitCnt=2]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@224a01f, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body0(GridDiscoveryManager.java:2856)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body(GridDiscoveryManager.java:2825)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="tcp-client-disco-msg-worker-#4%YCSB client node%", id=72, state=RUNNABLE, blockCnt=2, waitCnt=25]
+        at sun.management.ThreadImpl.dumpThreads0(Native Method)
+        at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:496)
+        at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:484)
+        at o.a.i.i.util.IgniteUtils.dumpThreads(IgniteUtils.java:1364)
+        at o.a.i.i.processors.failure.FailureProcessor.process(FailureProcessor.java:128)
+        - locked o.a.i.i.processors.failure.FailureProcessor@248e59d2
+        at o.a.i.i.processors.failure.FailureProcessor.process(FailureProcessor.java:104)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1829)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1826)
+        at o.a.i.i.worker.WorkersRegistry.onIdle(WorkersRegistry.java:233)
+        at o.a.i.i.util.worker.GridWorker.onIdle(GridWorker.java:297)
+        at o.a.i.spi.discovery.tcp.ClientImpl$MessageWorker.body(ClientImpl.java:1668)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.spi.discovery.tcp.ClientImpl$1.body(ClientImpl.java:304)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="tcp-client-disco-sock-reader-#3%YCSB client node%", id=71, state=RUNNABLE, blockCnt=1, waitCnt=1]
+        at java.net.SocketInputStream.socketRead0(Native Method)
+        at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+        at java.net.SocketInputStream.read(SocketInputStream.java:171)
+        at java.net.SocketInputStream.read(SocketInputStream.java:141)
+        at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+        at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+        at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+        - locked java.io.BufferedInputStream@7626554
+        at o.a.i.marshaller.jdk.JdkMarshallerInputStreamWrapper.read(JdkMarshallerInputStreamWrapper.java:53)
+        at java.io.ObjectInputStream$PeekInputStream.read(ObjectInputStream.java:2781)
+        at java.io.ObjectInputStream$PeekInputStream.readFully(ObjectInputStream.java:2797)
+        at java.io.ObjectInputStream$BlockDataInputStream.readShort(ObjectInputStream.java:3274)
+        at java.io.ObjectInputStream.readStreamHeader(ObjectInputStream.java:934)
+        at java.io.ObjectInputStream.<init>(ObjectInputStream.java:396)
+        at o.a.i.marshaller.jdk.JdkMarshallerObjectInputStream.<init>(JdkMarshallerObjectInputStream.java:43)
+        at o.a.i.marshaller.jdk.JdkMarshaller.unmarshal0(JdkMarshaller.java:137)
+        at o.a.i.marshaller.AbstractNodeNameAwareMarshaller.unmarshal(AbstractNodeNameAwareMarshaller.java:94)
+        at o.a.i.i.util.IgniteUtils.unmarshal(IgniteUtils.java:10085)
+        at o.a.i.spi.discovery.tcp.ClientImpl$SocketReader.body(ClientImpl.java:1118)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="tcp-client-disco-sock-writer-#2%YCSB client node%", id=70, state=WAITING, blockCnt=3, waitCnt=4]
+    Lock [object=java.lang.Object@3d01093f, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Object.wait(Object.java:502)
+        at o.a.i.spi.discovery.tcp.ClientImpl$SocketWriter.body(ClientImpl.java:1341)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="TcpDiscoverySpi.timer", id=69, state=TIMED_WAITING, blockCnt=1, waitCnt=3]
+    Lock [object=java.util.TaskQueue@1a0262d8, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.util.TimerThread.mainLoop(Timer.java:552)
+        at java.util.TimerThread.run(Timer.java:505)
+
+Thread [name="disco-notifier-worker-#46%YCSB client node%", id=68, state=WAITING, blockCnt=0, waitCnt=19]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@4c94f883, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryMessageNotifierWorker.body0(GridDiscoveryManager.java:2660)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryMessageNotifierWorker.body(GridDiscoveryManager.java:2705)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-data-loader-flusher-#45%YCSB client node%", id=67, state=WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@58487c80, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.DelayQueue.take(DelayQueue.java:211)
+        at o.a.i.i.processors.datastreamer.DataStreamProcessor$2.body(DataStreamProcessor.java:109)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-3-#42%YCSB client node%", id=64, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@6db5de47
+        - locked java.util.Collections$UnmodifiableSet@6428658b
+        - locked sun.nio.ch.EPollSelectorImpl@f93c96d
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-2-#41%YCSB client node%", id=63, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@14a41863
+        - locked java.util.Collections$UnmodifiableSet@5720ab56
+        - locked sun.nio.ch.EPollSelectorImpl@70839804
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-1-#40%YCSB client node%", id=62, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@61caffd8
+        - locked java.util.Collections$UnmodifiableSet@55199482
+        - locked sun.nio.ch.EPollSelectorImpl@731ef6c
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-0-#39%YCSB client node%", id=61, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@6b9e0436
+        - locked java.util.Collections$UnmodifiableSet@5d9c02a2
+        - locked sun.nio.ch.EPollSelectorImpl@44383017
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="nio-acceptor-client-listener-#43%YCSB client node%", id=65, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked sun.nio.ch.Util$3@4c7afd73
+        - locked java.util.Collections$UnmodifiableSet@575eff7e
+        - locked sun.nio.ch.EPollSelectorImpl@6a6a7e25
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.accept(GridNioServer.java:2929)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.body(GridNioServer.java:2877)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="tcp-comm-worker-#1%YCSB client node%", id=60, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@6f5743f7, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at o.a.i.spi.communication.tcp.TcpCommunicationSpi$CommunicationWorker.body(TcpCommunicationSpi.java:4287)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.spi.communication.tcp.TcpCommunicationSpi$5.body(TcpCommunicationSpi.java:2237)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="grid-nio-worker-tcp-comm-5-#37%YCSB client node%", id=56, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@745daa0b
+        - locked java.util.Collections$UnmodifiableSet@54d80ef1
+        - locked sun.nio.ch.EPollSelectorImpl@6d7ac919
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-4-#36%YCSB client node%", id=55, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@386777ba
+        - locked java.util.Collections$UnmodifiableSet@21f38f4f
+        - locked sun.nio.ch.EPollSelectorImpl@35c8b206
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-3-#35%YCSB client node%", id=54, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@e4187a7
+        - locked java.util.Collections$UnmodifiableSet@d98eb72
+        - locked sun.nio.ch.EPollSelectorImpl@302c8479
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-2-#34%YCSB client node%", id=53, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@400448f8
+        - locked java.util.Collections$UnmodifiableSet@42fa93e0
+        - locked sun.nio.ch.EPollSelectorImpl@87323b6
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-1-#33%YCSB client node%", id=52, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@5ca8618d
+        - locked java.util.Collections$UnmodifiableSet@3e09b168
+        - locked sun.nio.ch.EPollSelectorImpl@28fa40da
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-0-#32%YCSB client node%", id=51, state=RUNNABLE, blockCnt=1, waitCnt=0]
+        at o.a.i.i.util.nio.GridNioServer$DirectNioClientWorker.processWrite0(GridNioServer.java:1623)
+        at o.a.i.i.util.nio.GridNioServer$DirectNioClientWorker.processWrite(GridNioServer.java:1331)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.processSelectedKeysOptimized(GridNioServer.java:2392)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2156)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="nio-acceptor-tcp-comm-#38%YCSB client node%", id=59, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked sun.nio.ch.Util$3@3905a8e0
+        - locked java.util.Collections$UnmodifiableSet@263e0244
+        - locked sun.nio.ch.EPollSelectorImpl@55cf651a
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.accept(GridNioServer.java:2929)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.body(GridNioServer.java:2877)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-timeout-worker-#31%YCSB client node%", id=50, state=TIMED_WAITING, blockCnt=3, waitCnt=24]
+    Lock [object=java.lang.Object@2f4913e9, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at o.a.i.i.processors.timeout.GridTimeoutProcessor$TimeoutWorker.body(GridTimeoutProcessor.java:269)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="ignite-clock", id=49, state=TIMED_WAITING, blockCnt=0, waitCnt=863]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.util.IgniteUtils$22.run(IgniteUtils.java:3379)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#30%YCSB client node%", id=48, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#29%YCSB client node%", id=47, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#28%YCSB client node%", id=46, state=TIMED_WAITING, blockCnt=1, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#27%YCSB client node%", id=45, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#26%YCSB client node%", id=44, state=TIMED_WAITING, blockCnt=1, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#25%YCSB client node%", id=43, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="jvm-pause-detector-worker", id=42, state=TIMED_WAITING, blockCnt=0, waitCnt=181]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.LongJVMPauseDetector$1.run(LongJVMPauseDetector.java:100)
+
+Thread [name="data-streamer-stripe-11-#24%YCSB client node%", id=41, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-10-#23%YCSB client node%", id=40, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-9-#22%YCSB client node%", id=39, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-8-#21%YCSB client node%", id=38, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-7-#20%YCSB client node%", id=37, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-6-#19%YCSB client node%", id=36, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-5-#18%YCSB client node%", id=35, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-4-#17%YCSB client node%", id=34, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-3-#16%YCSB client node%", id=33, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-2-#15%YCSB client node%", id=32, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-1-#14%YCSB client node%", id=31, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-0-#13%YCSB client node%", id=30, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-11-#12%YCSB client node%", id=29, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-10-#11%YCSB client node%", id=28, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-9-#10%YCSB client node%", id=27, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-8-#9%YCSB client node%", id=26, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-7-#8%YCSB client node%", id=25, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-6-#7%YCSB client node%", id=24, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-5-#6%YCSB client node%", id=23, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-4-#5%YCSB client node%", id=22, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-3-#4%YCSB client node%", id=21, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-2-#3%YCSB client node%", id=20, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-1-#2%YCSB client node%", id=19, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-0-#1%YCSB client node%", id=18, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Thread-6", id=17, state=BLOCKED, blockCnt=1, waitCnt=0]
+    Lock [object=java.util.concurrent.atomic.AtomicInteger@3b1fec48, ownerName=Thread-5, ownerId=16]
+        at site.ycsb.db.ignite.IgniteAbstractClient.init(IgniteAbstractClient.java:88)
+        at site.ycsb.DBWrapper.init(DBWrapper.java:86)
+        at site.ycsb.ClientThread.run(ClientThread.java:91)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Thread-4", id=15, state=BLOCKED, blockCnt=1, waitCnt=0]
+    Lock [object=java.util.concurrent.atomic.AtomicInteger@3b1fec48, ownerName=Thread-5, ownerId=16]
+        at site.ycsb.db.ignite.IgniteAbstractClient.init(IgniteAbstractClient.java:88)
+        at site.ycsb.DBWrapper.init(DBWrapper.java:86)
+        at site.ycsb.ClientThread.run(ClientThread.java:91)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Thread-3", id=14, state=BLOCKED, blockCnt=1, waitCnt=0]
+    Lock [object=java.util.concurrent.atomic.AtomicInteger@3b1fec48, ownerName=Thread-5, ownerId=16]
+        at site.ycsb.db.ignite.IgniteAbstractClient.init(IgniteAbstractClient.java:88)
+        at site.ycsb.DBWrapper.init(DBWrapper.java:86)
+        at site.ycsb.ClientThread.run(ClientThread.java:91)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Thread-5", id=16, state=TIMED_WAITING, blockCnt=1, waitCnt=5]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:338)
+        at o.a.i.i.util.future.GridFutureAdapter.get0(GridFutureAdapter.java:219)
+        at o.a.i.i.util.future.GridFutureAdapter.get(GridFutureAdapter.java:160)
+        at o.a.i.i.util.future.GridFutureAdapter.get(GridFutureAdapter.java:152)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager.onKernalStart(GridCachePartitionExchangeManager.java:687)
+        at o.a.i.i.processors.cache.GridCacheProcessor.onKernalStart(GridCacheProcessor.java:988)
+        at o.a.i.i.IgniteKernal.start(IgniteKernal.java:1124)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2038)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1730)
+        - locked o.a.i.i.IgnitionEx$IgniteNamedInstance@6d65f54d
+        at o.a.i.i.IgnitionEx.start0(IgnitionEx.java:1158)
+        at o.a.i.i.IgnitionEx.start(IgnitionEx.java:678)
+        at o.a.i.i.IgnitionEx.start(IgnitionEx.java:603)
+        at o.a.i.Ignition.start(Ignition.java:323)
+        at site.ycsb.db.ignite.IgniteAbstractClient.init(IgniteAbstractClient.java:132)
+        - locked java.util.concurrent.atomic.AtomicInteger@3b1fec48
+        at site.ycsb.DBWrapper.init(DBWrapper.java:86)
+        at site.ycsb.ClientThread.run(ClientThread.java:91)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Thread-2", id=13, state=TIMED_WAITING, blockCnt=0, waitCnt=3]
+    Lock [object=java.util.concurrent.CountDownLatch$Sync@432cba4e, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1037)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+        at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:277)
+        at site.ycsb.StatusThread.waitForClientsUntil(StatusThread.java:199)
+        at site.ycsb.StatusThread.run(StatusThread.java:120)
+
+Thread [name="Signal Dispatcher", id=4, state=RUNNABLE, blockCnt=0, waitCnt=0]
+
+Thread [name="Finalizer", id=3, state=WAITING, blockCnt=30, waitCnt=4]
+    Lock [object=java.lang.ref.ReferenceQueue$Lock@241d3f99, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+        at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+Thread [name="Reference Handler", id=2, state=WAITING, blockCnt=3, waitCnt=3]
+    Lock [object=java.lang.ref.Reference$Lock@6024fafe, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Object.wait(Object.java:502)
+        at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+        at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+Thread [name="main", id=1, state=WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.lang.Thread@7d68ef40, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Thread.join(Thread.java:1252)
+        at java.lang.Thread.join(Thread.java:1326)
+        at site.ycsb.Client.main(Client.java:354)
+
+
+
+[01:06:15][INFO ][sys-#53%YCSB client node%] Delay process full message without exchange id (there is exchange in progress) [nodeId=99a95be9-18d1-49ea-951b-d793d0e2c2ca]
+[01:06:15][INFO ][sys-#52%YCSB client node%] Delay process full message without exchange id (there is exchange in progress) [nodeId=99a95be9-18d1-49ea-951b-d793d0e2c2ca]
+[01:06:15][INFO ][exchange-worker-#48%YCSB client node%] Started cache [name=ignite-sys-cache, id=-2100569601, memoryPolicyName=sysMemPlc, mode=REPLICATED, atomicity=TRANSACTIONAL, backups=2147483647, mvcc=false], encryptionEnabled=false]
+[01:06:15][INFO ][exchange-worker-#48%YCSB client node%] Starting caches on local join performed in 15040 ms.
+[01:06:15][INFO ][exchange-worker-#48%YCSB client node%] Sending Single Message performed in 0 ms.
+[01:06:15][INFO ][exchange-worker-#48%YCSB client node%] Finished exchange init [topVer=AffinityTopologyVersion [topVer=14, minorTopVer=0], crd=false]
+[01:06:15][INFO ][sys-#54%YCSB client node%] Received full message, will finish exchange [node=99a95be9-18d1-49ea-951b-d793d0e2c2ca, resVer=AffinityTopologyVersion [topVer=14, minorTopVer=0]]
+[01:06:15][INFO ][sys-#54%YCSB client node%] Affinity initialization on local join performed in 14 ms.
+[01:06:15][INFO ][sys-#54%YCSB client node%] Affinity changes applied in 14 ms.
+[01:06:15][INFO ][sys-#54%YCSB client node%] Full map updating for 2 groups performed in 0 ms.
+[01:06:15][INFO ][sys-#54%YCSB client node%] Finish exchange future [startVer=AffinityTopologyVersion [topVer=14, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=14, minorTopVer=0], err=null]
+[01:06:15][INFO ][sys-#54%YCSB client node%] Finish proxy initialization, cacheName=ignite-sys-cache, localNodeId=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41
+[01:06:15][INFO ][sys-#54%YCSB client node%] Completed partition exchange [localNode=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=14, minorTopVer=0], evt=NODE_JOINED, evtNode=TcpDiscoveryNode [id=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41, addrs=[127.0.0.1, 192.168.96.8], sockAddrs=[f85db5609a54/192.168.96.8:0, /127.0.0.1:0], discPort=0, order=14, intOrder=0, lastExchangeTime=1613955953096, loc=true, ver=2.7.0#20181130-sha1:256ae401, isClient=true], done=true], topVer=AffinityTopologyVersion [topVer=14, minorTopVer=0], durationFromInit=15156]
+[01:06:15][INFO ][exchange-worker-#48%YCSB client node%] Skipping rebalancing (no affinity changes) [top=AffinityTopologyVersion [topVer=14, minorTopVer=0], rebTopVer=AffinityTopologyVersion [topVer=-1, minorTopVer=0], evt=NODE_JOINED, evtNode=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41, client=true]
+[01:06:15][INFO ][exchange-worker-#48%YCSB client node%] Started exchange init [topVer=AffinityTopologyVersion [topVer=15, minorTopVer=0], mvccCrd=MvccCoordinator [nodeId=99a95be9-18d1-49ea-951b-d793d0e2c2ca, crdVer=1613955711771, topVer=AffinityTopologyVersion [topVer=14, minorTopVer=0]], mvccCrdChange=false, crd=false, evt=NODE_FAILED, evtNode=74749894-cbbb-47d7-9e23-49bf67211f26, customEvt=null, allowMerge=true]
+[01:06:15][INFO ][exchange-worker-#48%YCSB client node%] Sending Single Message performed in 0 ms.
+[01:06:15][INFO ][exchange-worker-#48%YCSB client node%] Finished exchange init [topVer=AffinityTopologyVersion [topVer=15, minorTopVer=0], crd=false]
+[01:06:36][INFO ][sys-#55%YCSB client node%] Received full message, will finish exchange [node=99a95be9-18d1-49ea-951b-d793d0e2c2ca, resVer=AffinityTopologyVersion [topVer=15, minorTopVer=0]]
+[01:06:36][WARN ][exchange-worker-#48%YCSB client node%] Failed to wait for partition map exchange [topVer=AffinityTopologyVersion [topVer=15, minorTopVer=0], node=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41]. Consider changing TransactionConfiguration.txTimeoutOnPartitionMapSynchronization to non default value to avoid this message. Dumping pending objects that might be the cause: 
+[01:06:36][WARN ][jvm-pause-detector-worker] Possible too long JVM pause: 20548 milliseconds.
+[01:06:36][WARN ][exchange-worker-#48%YCSB client node%] Ready affinity version: AffinityTopologyVersion [topVer=14, minorTopVer=0]
+[01:06:36][ERROR][disco-event-worker-#47%YCSB client node%] Blocked system-critical thread has been detected. This can lead to cluster-wide undefined behaviour [threadName=grid-nio-worker-tcp-comm-4, blockedFor=20s]
+[01:06:36][INFO ][sys-#55%YCSB client node%] Affinity applying from full message performed in 4 ms.
+[01:06:36][INFO ][sys-#55%YCSB client node%] Affinity changes applied in 5 ms.
+[01:06:36][WARN ][disco-event-worker-#47%YCSB client node%] Thread [name="grid-nio-worker-tcp-comm-4-#36%YCSB client node%", id=55, state=RUNNABLE, blockCnt=0, waitCnt=0]
+
+[01:06:36][INFO ][sys-#55%YCSB client node%] Full map updating for 2 groups performed in 1 ms.
+[01:06:36][INFO ][sys-#55%YCSB client node%] Finish exchange future [startVer=AffinityTopologyVersion [topVer=15, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=15, minorTopVer=0], err=null]
+[01:06:36][ERROR][disco-event-worker-#47%YCSB client node%] Critical system error detected. Will be handled accordingly to configured handler [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED]]], failureCtx=FailureContext [type=SYSTEM_WORKER_BLOCKED, err=class o.a.i.IgniteException: GridWorker [name=grid-nio-worker-tcp-comm-4, igniteInstanceName=YCSB client node, finished=false, heartbeatTs=1613955975770]]]
+org.apache.ignite.IgniteException: GridWorker [name=grid-nio-worker-tcp-comm-4, igniteInstanceName=YCSB client node, finished=false, heartbeatTs=1613955975770]
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1831) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1826) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.internal.worker.WorkersRegistry.onIdle(WorkersRegistry.java:233) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.internal.util.worker.GridWorker.onIdle(GridWorker.java:297) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body(GridDiscoveryManager.java:2827) [ignite-core-2.7.0.jar:2.7.0]
+	at org.apache.ignite.internal.util.worker.GridWorker.run(GridWorker.java:120) [ignite-core-2.7.0.jar:2.7.0]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+[01:06:36][WARN ][disco-event-worker-#47%YCSB client node%] No deadlocked threads detected.
+[01:06:36][WARN ][exchange-worker-#48%YCSB client node%] Last exchange future: GridDhtPartitionsExchangeFuture [firstDiscoEvt=DiscoveryEvent [evtNode=TcpDiscoveryNode [id=74749894-cbbb-47d7-9e23-49bf67211f26, addrs=[127.0.0.1, 192.168.96.9], sockAddrs=[1aab6c6fe331/192.168.96.9:47500, /127.0.0.1:47500], discPort=47500, order=6, intOrder=5, lastExchangeTime=1613955960343, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false], topVer=15, nodeId8=e7bd26c3, msg=Node failed: TcpDiscoveryNode [id=74749894-cbbb-47d7-9e23-49bf67211f26, addrs=[127.0.0.1, 192.168.96.9], sockAddrs=[1aab6c6fe331/192.168.96.9:47500, /127.0.0.1:47500], discPort=47500, order=6, intOrder=5, lastExchangeTime=1613955960343, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false], type=NODE_FAILED, tstamp=1613955960582], crd=TcpDiscoveryNode [id=99a95be9-18d1-49ea-951b-d793d0e2c2ca, addrs=[127.0.0.1, 192.168.96.2], sockAddrs=[/127.0.0.1:47500, 08c3e5d6f4bb/192.168.96.2:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1613955960343, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false], exchId=GridDhtPartitionExchangeId [topVer=AffinityTopologyVersion [topVer=15, minorTopVer=0], discoEvt=DiscoveryEvent [evtNode=TcpDiscoveryNode [id=74749894-cbbb-47d7-9e23-49bf67211f26, addrs=[127.0.0.1, 192.168.96.9], sockAddrs=[1aab6c6fe331/192.168.96.9:47500, /127.0.0.1:47500], discPort=47500, order=6, intOrder=5, lastExchangeTime=1613955960343, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false], topVer=15, nodeId8=e7bd26c3, msg=Node failed: TcpDiscoveryNode [id=74749894-cbbb-47d7-9e23-49bf67211f26, addrs=[127.0.0.1, 192.168.96.9], sockAddrs=[1aab6c6fe331/192.168.96.9:47500, /127.0.0.1:47500], discPort=47500, order=6, intOrder=5, lastExchangeTime=1613955960343, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false], type=NODE_FAILED, tstamp=1613955960582], nodeId=74749894, evt=NODE_FAILED], added=true, initFut=GridFutureAdapter [ignoreInterrupts=false, state=DONE, res=true, hash=1564349097], init=true, lastVer=null, partReleaseFut=null, exchActions=null, affChangeMsg=null, initTs=1613955975749, centralizedAff=false, forceAffReassignment=false, exchangeLocE=null, cacheChangeFailureMsgSent=false, done=true, state=DONE, registerCachesFuture=null, partitionsSent=false, partitionsReceived=true, delayedLatestMsg=null, afterLsnrCompleteFut=GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=795893925], evtLatch=0, remaining=[a8a71d71-66e5-4672-9b8f-918e438f7e7f, 82670c58-13be-465a-a690-5df244aaa201, 64c0fbc1-2063-4ffa-ab4f-f6c34cc20202, 3e1a23fc-4f62-43bb-95e6-7a1aaa8884cf, d94da098-9dd1-43f2-bd8c-7659993be9de, 99a95be9-18d1-49ea-951b-d793d0e2c2ca, c5071410-72d8-40d5-a340-9950ccc6a4d2, d9f6be21-5c3b-4d9a-b57a-49557b79a56f], super=GridFutureAdapter [ignoreInterrupts=false, state=INIT, res=null, hash=515893890]]
+[01:06:36][INFO ][sys-#55%YCSB client node%] Detecting lost partitions performed in 23 ms.
+[01:06:36][WARN ][exchange-worker-#48%YCSB client node%] First 10 pending exchange futures [total=2]
+[01:06:36][INFO ][sys-#55%YCSB client node%] Completed partition exchange [localNode=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=15, minorTopVer=0], evt=NODE_FAILED, evtNode=TcpDiscoveryNode [id=74749894-cbbb-47d7-9e23-49bf67211f26, addrs=[127.0.0.1, 192.168.96.9], sockAddrs=[1aab6c6fe331/192.168.96.9:47500, /127.0.0.1:47500], discPort=47500, order=6, intOrder=5, lastExchangeTime=1613955960343, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false], done=true], topVer=AffinityTopologyVersion [topVer=15, minorTopVer=0], durationFromInit=20631]
+[01:06:36][WARN ][exchange-worker-#48%YCSB client node%] Last 10 exchange futures (total: 2):
+[01:06:36][WARN ][exchange-worker-#48%YCSB client node%] >>> GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=15, minorTopVer=0], evt=NODE_FAILED, evtNode=TcpDiscoveryNode [id=74749894-cbbb-47d7-9e23-49bf67211f26, addrs=[127.0.0.1, 192.168.96.9], sockAddrs=[1aab6c6fe331/192.168.96.9:47500, /127.0.0.1:47500], discPort=47500, order=6, intOrder=5, lastExchangeTime=1613955960343, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false], done=true]
+[01:06:36][WARN ][exchange-worker-#48%YCSB client node%] >>> GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=14, minorTopVer=0], evt=NODE_JOINED, evtNode=TcpDiscoveryNode [id=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41, addrs=[127.0.0.1, 192.168.96.8], sockAddrs=[f85db5609a54/192.168.96.8:0, /127.0.0.1:0], discPort=0, order=14, intOrder=0, lastExchangeTime=1613955953096, loc=true, ver=2.7.0#20181130-sha1:256ae401, isClient=true], done=true]
+[01:06:36][WARN ][exchange-worker-#48%YCSB client node%] Latch manager state: ExchangeLatchManager [serverLatches={}, clientLatches={}]
+[01:06:36][INFO ][exchange-worker-#48%YCSB client node%] Skipping rebalancing (no affinity changes) [top=AffinityTopologyVersion [topVer=15, minorTopVer=0], rebTopVer=AffinityTopologyVersion [topVer=-1, minorTopVer=0], evt=NODE_FAILED, evtNode=74749894-cbbb-47d7-9e23-49bf67211f26, client=true]
+[01:06:36][INFO ][grid-nio-worker-tcp-comm-1-#33%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.96.8:40234, rmtAddr=6094b836e8f5/192.168.96.3:47100]
+[01:06:36][WARN ][disco-event-worker-#47%YCSB client node%] Thread dump at 2021/02/22 01:06:36 UTC
+Thread [name="session-timeout-worker-#44%YCSB client node%", id=66, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.processors.rest.GridRestProcessor$4.body(GridRestProcessor.java:495)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-#56%YCSB client node%", id=84, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at java.util.zip.ZipFile.getEntryBytes(Native Method)
+        at java.util.zip.ZipFile.getZipEntry(ZipFile.java:577)
+        at java.util.zip.ZipFile.getEntry(ZipFile.java:326)
+        - locked java.util.jar.JarFile@579a7142
+        at java.util.jar.JarFile.getEntry(JarFile.java:240)
+        at java.util.jar.JarFile.getJarEntry(JarFile.java:223)
+        at sun.misc.URLClassPath$JarLoader.getResource(URLClassPath.java:1054)
+        at sun.misc.URLClassPath.getResource(URLClassPath.java:249)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
+        at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+        - locked java.lang.Object@54669f8
+        at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+        at o.a.i.i.processors.cache.query.GridCacheDistributedQueryManager.queryDistributed(GridCacheDistributedQueryManager.java:571)
+        at o.a.i.i.processors.cache.query.GridCacheDistributedQueryManager.scanQueryDistributed(GridCacheDistributedQueryManager.java:618)
+        at o.a.i.i.processors.cache.query.GridCacheQueryAdapter.executeScanQuery(GridCacheQueryAdapter.java:585)
+        at o.a.i.i.processors.cache.GridCacheAdapter.igniteIterator(GridCacheAdapter.java:4087)
+        at o.a.i.i.processors.cache.GridCacheAdapter.igniteIterator(GridCacheAdapter.java:4070)
+        at o.a.i.i.processors.cache.query.continuous.CacheContinuousQueryManager.existingEntries(CacheContinuousQueryManager.java:846)
+        at o.a.i.i.processors.service.GridServiceProcessor$1.run(GridServiceProcessor.java:268)
+        at o.a.i.i.util.IgniteUtils.wrapThreadLoader(IgniteUtils.java:6872)
+        at o.a.i.i.processors.closure.GridClosureProcessor$1.body(GridClosureProcessor.java:827)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+    Locked synchronizers:
+        java.util.concurrent.ThreadPoolExecutor$Worker@354f77ff
+Thread [name="sys-#55%YCSB client node%", id=83, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at o.a.i.i.util.GridPartitionStateMap$1$1$1.getKey(GridPartitionStateMap.java:103)
+        at o.a.i.i.util.GridPartitionStateMap$1$1$1.getKey(GridPartitionStateMap.java:99)
+        at o.a.i.i.processors.cache.distributed.dht.topology.GridDhtPartitionTopologyImpl.detectLostPartitions(GridDhtPartitionTopologyImpl.java:2028)
+        at o.a.i.i.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.detectLostPartitions(GridDhtPartitionsExchangeFuture.java:3045)
+        - locked java.lang.Object@3127f0f1
+        at o.a.i.i.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.onDone(GridDhtPartitionsExchangeFuture.java:2113)
+        at o.a.i.i.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.processFullMessage(GridDhtPartitionsExchangeFuture.java:3953)
+        at o.a.i.i.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.access$1600(GridDhtPartitionsExchangeFuture.java:139)
+        at o.a.i.i.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture$5.apply(GridDhtPartitionsExchangeFuture.java:3640)
+        at o.a.i.i.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture$5.apply(GridDhtPartitionsExchangeFuture.java:3628)
+        at o.a.i.i.util.future.GridFutureAdapter.notifyListener(GridFutureAdapter.java:385)
+        at o.a.i.i.util.future.GridFutureAdapter.listen(GridFutureAdapter.java:355)
+        at o.a.i.i.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture.onReceiveFullMessage(GridDhtPartitionsExchangeFuture.java:3628)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager.processFullPartitionUpdate(GridCachePartitionExchangeManager.java:1576)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$3.onMessage(GridCachePartitionExchangeManager.java:393)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$3.onMessage(GridCachePartitionExchangeManager.java:380)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$MessageHandler.apply(GridCachePartitionExchangeManager.java:3102)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$MessageHandler.apply(GridCachePartitionExchangeManager.java:3081)
+        at o.a.i.i.processors.cache.GridCacheIoManager.processMessage(GridCacheIoManager.java:1056)
+        at o.a.i.i.processors.cache.GridCacheIoManager.onMessage0(GridCacheIoManager.java:581)
+        at o.a.i.i.processors.cache.GridCacheIoManager.handleMessage(GridCacheIoManager.java:380)
+        at o.a.i.i.processors.cache.GridCacheIoManager.handleMessage(GridCacheIoManager.java:306)
+        at o.a.i.i.processors.cache.GridCacheIoManager.access$100(GridCacheIoManager.java:101)
+        at o.a.i.i.processors.cache.GridCacheIoManager$1.onMessage(GridCacheIoManager.java:295)
+        at o.a.i.i.managers.communication.GridIoManager.invokeListener(GridIoManager.java:1569)
+        at o.a.i.i.managers.communication.GridIoManager.processRegularMessage0(GridIoManager.java:1197)
+        at o.a.i.i.managers.communication.GridIoManager.access$4200(GridIoManager.java:127)
+        at o.a.i.i.managers.communication.GridIoManager$9.run(GridIoManager.java:1093)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+    Locked synchronizers:
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@53a3812e
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@57b7ea79
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@618850de
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@6fa69466
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@20c3c24d
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@484f100e
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@6be2a779
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@30bc0bc7
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@ed37637
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@3eacc883
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@400b7940
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@1039a0b5
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@54e1e4b
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@5dfe36b1
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@46249537
+        java.util.concurrent.locks.ReentrantReadWriteLock$NonfairSync@1b45b94e
+        java.util.concurrent.ThreadPoolExecutor$Worker@656ec478
+Thread [name="sys-#54%YCSB client node%", id=82, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@db6d135, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-#53%YCSB client node%", id=81, state=TIMED_WAITING, blockCnt=1, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@db6d135, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-#52%YCSB client node%", id=80, state=TIMED_WAITING, blockCnt=2, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@db6d135, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#51%YCSB client node%", id=79, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-#50%YCSB client node%", id=78, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@db6d135, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#49%YCSB client node%", id=77, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="exchange-worker-#48%YCSB client node%", id=76, state=RUNNABLE, blockCnt=9, waitCnt=2]
+        at org.apache.logging.log4j.core.pattern.MessagePatternConverter.format(MessagePatternConverter.java:128)
+        at org.apache.logging.log4j.core.pattern.PatternFormatter.format(PatternFormatter.java:38)
+        at org.apache.logging.log4j.core.layout.PatternLayout$PatternSerializer.toSerializable(PatternLayout.java:334)
+        at org.apache.logging.log4j.core.layout.PatternLayout.toText(PatternLayout.java:233)
+        at org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:218)
+        at org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:58)
+        at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.directEncodeEvent(AbstractOutputStreamAppender.java:177)
+        at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.tryAppend(AbstractOutputStreamAppender.java:170)
+        at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:161)
+        at org.apache.logging.log4j.core.appender.RollingFileAppender.append(RollingFileAppender.java:309)
+        at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:156)
+        at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:129)
+        at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:120)
+        at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:84)
+        at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:448)
+        at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:433)
+        at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:417)
+        at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:403)
+        at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:63)
+        at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:146)
+        at org.apache.logging.log4j.spi.AbstractLogger.tryLogMessage(AbstractLogger.java:2170)
+        at org.apache.logging.log4j.spi.AbstractLogger.logMessageTrackRecursion(AbstractLogger.java:2125)
+        at org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2108)
+        at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:2002)
+        at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1974)
+        at org.apache.logging.log4j.spi.AbstractLogger.warn(AbstractLogger.java:2588)
+        at o.a.i.logger.log4j2.Log4J2Logger.warning(Log4J2Logger.java:488)
+        at o.a.i.logger.log4j2.Log4J2Logger.warning(Log4J2Logger.java:483)
+        at o.a.i.i.GridLoggerProxy.warning(GridLoggerProxy.java:153)
+        at o.a.i.i.util.IgniteUtils.warn(IgniteUtils.java:4363)
+        at o.a.i.i.util.IgniteUtils.warn(IgniteUtils.java:4300)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager.dumpDebugInfo(GridCachePartitionExchangeManager.java:1702)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$ExchangeWorker.body0(GridCachePartitionExchangeManager.java:2717)
+        at o.a.i.i.processors.cache.GridCachePartitionExchangeManager$ExchangeWorker.body(GridCachePartitionExchangeManager.java:2539)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="ignite-update-notifier-timer", id=75, state=TIMED_WAITING, blockCnt=1, waitCnt=4]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.processors.cluster.ClusterProcessor$UpdateNotifierTimerTask.safeRun(ClusterProcessor.java:686)
+        at o.a.i.i.util.GridTimerTask.run(GridTimerTask.java:34)
+        at java.util.TimerThread.mainLoop(Timer.java:555)
+        at java.util.TimerThread.run(Timer.java:505)
+
+Thread [name="upd-ver-checker", id=74, state=RUNNABLE, blockCnt=0, waitCnt=1]
+        at sun.security.x509.X500Name.parseDER(X500Name.java:800)
+        at sun.security.x509.X500Name.<init>(X500Name.java:306)
+        at sun.security.x509.X509CertInfo.parse(X509CertInfo.java:649)
+        at sun.security.x509.X509CertInfo.<init>(X509CertInfo.java:167)
+        at sun.security.x509.X509CertImpl.parse(X509CertImpl.java:1855)
+        at sun.security.x509.X509CertImpl.<init>(X509CertImpl.java:195)
+        at sun.security.provider.X509Factory.engineGenerateCertificate(X509Factory.java:102)
+        at java.security.cert.CertificateFactory.generateCertificate(CertificateFactory.java:339)
+        at sun.security.provider.JavaKeyStore.engineLoad(JavaKeyStore.java:763)
+        - locked java.util.Hashtable@6e0c502b
+        at sun.security.provider.JavaKeyStore$JKS.engineLoad(JavaKeyStore.java:57)
+        at sun.security.provider.KeyStoreDelegator.engineLoad(KeyStoreDelegator.java:224)
+        at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(JavaKeyStore.java:71)
+        at java.security.KeyStore.load(KeyStore.java:1445)
+        at sun.security.ssl.TrustStoreManager$TrustAnchorManager.loadKeyStore(TrustStoreManager.java:365)
+        at sun.security.ssl.TrustStoreManager$TrustAnchorManager.getTrustedCerts(TrustStoreManager.java:313)
+        - locked sun.security.ssl.TrustStoreManager$TrustAnchorManager@426ba8e5
+        at sun.security.ssl.TrustStoreManager.getTrustedCerts(TrustStoreManager.java:55)
+        at sun.security.ssl.TrustManagerFactoryImpl.engineInit(TrustManagerFactoryImpl.java:49)
+        at javax.net.ssl.TrustManagerFactory.init(TrustManagerFactory.java:250)
+        at sun.security.ssl.SSLContextImpl$DefaultManagersHolder.getTrustManagers(SSLContextImpl.java:1041)
+        at sun.security.ssl.SSLContextImpl$DefaultManagersHolder.<clinit>(SSLContextImpl.java:1011)
+        at sun.security.ssl.SSLContextImpl$DefaultSSLContext.<init>(SSLContextImpl.java:1186)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+        at java.security.Provider$Service.newInstance(Provider.java:1595)
+        at sun.security.jca.GetInstance.getInstance(GetInstance.java:236)
+        at sun.security.jca.GetInstance.getInstance(GetInstance.java:164)
+        at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156)
+        at javax.net.ssl.SSLContext.getDefault(SSLContext.java:96)
+        - locked java.lang.Class@20f067f0
+        at javax.net.ssl.SSLSocketFactory.getDefault(SSLSocketFactory.java:122)
+        - locked java.lang.Class@1bf435a2
+        at javax.net.ssl.HttpsURLConnection.getDefaultSSLSocketFactory(HttpsURLConnection.java:332)
+        at javax.net.ssl.HttpsURLConnection.<init>(HttpsURLConnection.java:289)
+        at sun.net.www.protocol.https.HttpsURLConnectionImpl.<init>(HttpsURLConnectionImpl.java:99)
+        at sun.net.www.protocol.https.Handler.openConnection(Handler.java:62)
+        at sun.net.www.protocol.https.Handler.openConnection(Handler.java:57)
+        at java.net.URL.openConnection(URL.java:1002)
+        at o.a.i.i.processors.cluster.HttpIgniteUpdatesChecker.getUpdates(HttpIgniteUpdatesChecker.java:59)
+        at o.a.i.i.processors.cluster.GridUpdateNotifier$UpdateChecker.body(GridUpdateNotifier.java:268)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.i.processors.cluster.GridUpdateNotifier$1.run(GridUpdateNotifier.java:113)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="disco-event-worker-#47%YCSB client node%", id=73, state=RUNNABLE, blockCnt=12, waitCnt=8]
+        at sun.management.ThreadImpl.dumpThreads0(Native Method)
+        at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:496)
+        at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:484)
+        at o.a.i.i.util.IgniteUtils.dumpThreads(IgniteUtils.java:1364)
+        at o.a.i.i.processors.failure.FailureProcessor.process(FailureProcessor.java:128)
+        - locked o.a.i.i.processors.failure.FailureProcessor@248e59d2
+        at o.a.i.i.processors.failure.FailureProcessor.process(FailureProcessor.java:104)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1829)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance$2.apply(IgnitionEx.java:1826)
+        at o.a.i.i.worker.WorkersRegistry.onIdle(WorkersRegistry.java:233)
+        at o.a.i.i.util.worker.GridWorker.onIdle(GridWorker.java:297)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryWorker.body(GridDiscoveryManager.java:2827)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="tcp-client-disco-msg-worker-#4%YCSB client node%", id=72, state=WAITING, blockCnt=2, waitCnt=69]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.future.GridFutureAdapter.get0(GridFutureAdapter.java:178)
+        at o.a.i.i.util.future.GridFutureAdapter.get(GridFutureAdapter.java:141)
+        at o.a.i.i.util.future.IgniteFutureImpl.get(IgniteFutureImpl.java:134)
+        at o.a.i.spi.discovery.tcp.ClientImpl$MessageWorker.notifyDiscovery(ClientImpl.java:2592)
+        at o.a.i.spi.discovery.tcp.ClientImpl$MessageWorker.notifyDiscovery(ClientImpl.java:2566)
+        at o.a.i.spi.discovery.tcp.ClientImpl$MessageWorker.updateMetrics(ClientImpl.java:2553)
+        at o.a.i.spi.discovery.tcp.ClientImpl$MessageWorker.processMetricsUpdateMessage(ClientImpl.java:2421)
+        at o.a.i.spi.discovery.tcp.ClientImpl$MessageWorker.processDiscoveryMessage(ClientImpl.java:2066)
+        at o.a.i.spi.discovery.tcp.ClientImpl$MessageWorker.body(ClientImpl.java:1905)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.spi.discovery.tcp.ClientImpl$1.body(ClientImpl.java:304)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="tcp-client-disco-sock-reader-#3%YCSB client node%", id=71, state=RUNNABLE, blockCnt=1, waitCnt=1]
+        at java.lang.String.intern(Native Method)
+        at java.io.ObjectStreamField.<init>(ObjectStreamField.java:107)
+        at java.io.ObjectStreamClass.readNonProxy(ObjectStreamClass.java:805)
+        at java.io.ObjectInputStream.readClassDescriptor(ObjectInputStream.java:963)
+        at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:1975)
+        at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1850)
+        at java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2003)
+        at java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1850)
+        at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2160)
+        at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1667)
+        at java.io.ObjectInputStream.readObject(ObjectInputStream.java:503)
+        at java.io.ObjectInputStream.readObject(ObjectInputStream.java:461)
+        at o.a.i.marshaller.jdk.JdkMarshaller.unmarshal0(JdkMarshaller.java:139)
+        at o.a.i.marshaller.AbstractNodeNameAwareMarshaller.unmarshal(AbstractNodeNameAwareMarshaller.java:94)
+        at o.a.i.i.util.IgniteUtils.unmarshal(IgniteUtils.java:10085)
+        at o.a.i.spi.discovery.tcp.ClientImpl$SocketReader.body(ClientImpl.java:1118)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="tcp-client-disco-sock-writer-#2%YCSB client node%", id=70, state=TIMED_WAITING, blockCnt=4, waitCnt=5]
+    Lock [object=java.lang.Object@3d01093f, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at o.a.i.spi.discovery.tcp.ClientImpl$SocketWriter.body(ClientImpl.java:1383)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="TcpDiscoverySpi.timer", id=69, state=TIMED_WAITING, blockCnt=1, waitCnt=4]
+    Lock [object=java.util.TaskQueue@1a0262d8, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.util.TimerThread.mainLoop(Timer.java:552)
+        at java.util.TimerThread.run(Timer.java:505)
+
+Thread [name="disco-notifier-worker-#46%YCSB client node%", id=68, state=RUNNABLE, blockCnt=0, waitCnt=108]
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer.setHead(AbstractQueuedSynchronizer.java:628)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(AbstractQueuedSynchronizer.java:864)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+        at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryMessageNotifierWorker.body0(GridDiscoveryManager.java:2660)
+        at o.a.i.i.managers.discovery.GridDiscoveryManager$DiscoveryMessageNotifierWorker.body(GridDiscoveryManager.java:2705)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+    Locked synchronizers:
+        java.util.concurrent.locks.ReentrantLock$NonfairSync@200400b2
+Thread [name="grid-data-loader-flusher-#45%YCSB client node%", id=67, state=WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@58487c80, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+        at java.util.concurrent.DelayQueue.take(DelayQueue.java:211)
+        at o.a.i.i.processors.datastreamer.DataStreamProcessor$2.body(DataStreamProcessor.java:109)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-3-#42%YCSB client node%", id=64, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@6db5de47
+        - locked java.util.Collections$UnmodifiableSet@6428658b
+        - locked sun.nio.ch.EPollSelectorImpl@f93c96d
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-2-#41%YCSB client node%", id=63, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@14a41863
+        - locked java.util.Collections$UnmodifiableSet@5720ab56
+        - locked sun.nio.ch.EPollSelectorImpl@70839804
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-1-#40%YCSB client node%", id=62, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@61caffd8
+        - locked java.util.Collections$UnmodifiableSet@55199482
+        - locked sun.nio.ch.EPollSelectorImpl@731ef6c
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-client-listener-0-#39%YCSB client node%", id=61, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@6b9e0436
+        - locked java.util.Collections$UnmodifiableSet@5d9c02a2
+        - locked sun.nio.ch.EPollSelectorImpl@44383017
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="nio-acceptor-client-listener-#43%YCSB client node%", id=65, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked sun.nio.ch.Util$3@4c7afd73
+        - locked java.util.Collections$UnmodifiableSet@575eff7e
+        - locked sun.nio.ch.EPollSelectorImpl@6a6a7e25
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.accept(GridNioServer.java:2929)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.body(GridNioServer.java:2877)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="tcp-comm-worker-#1%YCSB client node%", id=60, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@6f5743f7, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at o.a.i.spi.communication.tcp.TcpCommunicationSpi$CommunicationWorker.body(TcpCommunicationSpi.java:4287)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at o.a.i.spi.communication.tcp.TcpCommunicationSpi$5.body(TcpCommunicationSpi.java:2237)
+        at o.a.i.spi.IgniteSpiThread.run(IgniteSpiThread.java:62)
+
+Thread [name="grid-nio-worker-tcp-comm-5-#37%YCSB client node%", id=56, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@745daa0b
+        - locked java.util.Collections$UnmodifiableSet@54d80ef1
+        - locked sun.nio.ch.EPollSelectorImpl@6d7ac919
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-4-#36%YCSB client node%", id=55, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@386777ba
+        - locked java.util.Collections$UnmodifiableSet@21f38f4f
+        - locked sun.nio.ch.EPollSelectorImpl@35c8b206
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-3-#35%YCSB client node%", id=54, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@e4187a7
+        - locked java.util.Collections$UnmodifiableSet@d98eb72
+        - locked sun.nio.ch.EPollSelectorImpl@302c8479
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-2-#34%YCSB client node%", id=53, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@400448f8
+        - locked java.util.Collections$UnmodifiableSet@42fa93e0
+        - locked sun.nio.ch.EPollSelectorImpl@87323b6
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-1-#33%YCSB client node%", id=52, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@5ca8618d
+        - locked java.util.Collections$UnmodifiableSet@3e09b168
+        - locked sun.nio.ch.EPollSelectorImpl@28fa40da
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-nio-worker-tcp-comm-0-#32%YCSB client node%", id=51, state=RUNNABLE, blockCnt=7, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked o.a.i.i.util.nio.SelectedSelectionKeySet@163d5235
+        - locked java.util.Collections$UnmodifiableSet@1abcd5d1
+        - locked sun.nio.ch.EPollSelectorImpl@58f7ae3
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.bodyInternal(GridNioServer.java:2151)
+        at o.a.i.i.util.nio.GridNioServer$AbstractNioClientWorker.body(GridNioServer.java:1797)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="nio-acceptor-tcp-comm-#38%YCSB client node%", id=59, state=RUNNABLE, blockCnt=0, waitCnt=0]
+        at sun.nio.ch.EPollArrayWrapper.epollWait(Native Method)
+        at sun.nio.ch.EPollArrayWrapper.poll(EPollArrayWrapper.java:269)
+        at sun.nio.ch.EPollSelectorImpl.doSelect(EPollSelectorImpl.java:93)
+        at sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+        - locked sun.nio.ch.Util$3@3905a8e0
+        - locked java.util.Collections$UnmodifiableSet@263e0244
+        - locked sun.nio.ch.EPollSelectorImpl@55cf651a
+        at sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.accept(GridNioServer.java:2929)
+        at o.a.i.i.util.nio.GridNioServer$GridNioAcceptWorker.body(GridNioServer.java:2877)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="grid-timeout-worker-#31%YCSB client node%", id=50, state=TIMED_WAITING, blockCnt=3, waitCnt=25]
+    Lock [object=java.lang.Object@2f4913e9, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at o.a.i.i.processors.timeout.GridTimeoutProcessor$TimeoutWorker.body(GridTimeoutProcessor.java:269)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="ignite-clock", id=49, state=TIMED_WAITING, blockCnt=0, waitCnt=889]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.util.IgniteUtils$22.run(IgniteUtils.java:3379)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#30%YCSB client node%", id=48, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#29%YCSB client node%", id=47, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#28%YCSB client node%", id=46, state=TIMED_WAITING, blockCnt=1, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#27%YCSB client node%", id=45, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#26%YCSB client node%", id=44, state=TIMED_WAITING, blockCnt=1, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="pub-#25%YCSB client node%", id=43, state=TIMED_WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@622b8850, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+        at java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="jvm-pause-detector-worker", id=42, state=TIMED_WAITING, blockCnt=0, waitCnt=187]
+        at java.lang.Thread.sleep(Native Method)
+        at o.a.i.i.LongJVMPauseDetector$1.run(LongJVMPauseDetector.java:100)
+
+Thread [name="data-streamer-stripe-11-#24%YCSB client node%", id=41, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-10-#23%YCSB client node%", id=40, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-9-#22%YCSB client node%", id=39, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-8-#21%YCSB client node%", id=38, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-7-#20%YCSB client node%", id=37, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-6-#19%YCSB client node%", id=36, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-5-#18%YCSB client node%", id=35, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-4-#17%YCSB client node%", id=34, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-3-#16%YCSB client node%", id=33, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-2-#15%YCSB client node%", id=32, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-1-#14%YCSB client node%", id=31, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="data-streamer-stripe-0-#13%YCSB client node%", id=30, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-11-#12%YCSB client node%", id=29, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-10-#11%YCSB client node%", id=28, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-9-#10%YCSB client node%", id=27, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-8-#9%YCSB client node%", id=26, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-7-#8%YCSB client node%", id=25, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-6-#7%YCSB client node%", id=24, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-5-#6%YCSB client node%", id=23, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-4-#5%YCSB client node%", id=22, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-3-#4%YCSB client node%", id=21, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-2-#3%YCSB client node%", id=20, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-1-#2%YCSB client node%", id=19, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="sys-stripe-0-#1%YCSB client node%", id=18, state=WAITING, blockCnt=0, waitCnt=1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+        at o.a.i.i.util.StripedExecutor$StripeConcurrentQueue.take(StripedExecutor.java:669)
+        at o.a.i.i.util.StripedExecutor$Stripe.body(StripedExecutor.java:493)
+        at o.a.i.i.util.worker.GridWorker.run(GridWorker.java:120)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Thread-6", id=17, state=BLOCKED, blockCnt=1, waitCnt=0]
+    Lock [object=java.util.concurrent.atomic.AtomicInteger@3b1fec48, ownerName=Thread-5, ownerId=16]
+        at site.ycsb.db.ignite.IgniteAbstractClient.init(IgniteAbstractClient.java:88)
+        at site.ycsb.DBWrapper.init(DBWrapper.java:86)
+        at site.ycsb.ClientThread.run(ClientThread.java:91)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Thread-4", id=15, state=BLOCKED, blockCnt=1, waitCnt=0]
+    Lock [object=java.util.concurrent.atomic.AtomicInteger@3b1fec48, ownerName=Thread-5, ownerId=16]
+        at site.ycsb.db.ignite.IgniteAbstractClient.init(IgniteAbstractClient.java:88)
+        at site.ycsb.DBWrapper.init(DBWrapper.java:86)
+        at site.ycsb.ClientThread.run(ClientThread.java:91)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Thread-3", id=14, state=BLOCKED, blockCnt=1, waitCnt=0]
+    Lock [object=java.util.concurrent.atomic.AtomicInteger@3b1fec48, ownerName=Thread-5, ownerId=16]
+        at site.ycsb.db.ignite.IgniteAbstractClient.init(IgniteAbstractClient.java:88)
+        at site.ycsb.DBWrapper.init(DBWrapper.java:86)
+        at site.ycsb.ClientThread.run(ClientThread.java:91)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Thread-5", id=16, state=RUNNABLE, blockCnt=1, waitCnt=5]
+        at java.security.AccessController.doPrivileged(Native Method)
+        at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+        - locked java.lang.Object@50eeb70
+        at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:352)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+        at java.lang.Class.getDeclaredConstructors0(Native Method)
+        at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+        at java.lang.Class.getConstructors(Class.java:1651)
+        at com.sun.jmx.mbeanserver.MBeanIntrospector.findConstructors(MBeanIntrospector.java:462)
+        at com.sun.jmx.mbeanserver.MBeanIntrospector.getClassMBeanInfo(MBeanIntrospector.java:433)
+        - locked com.sun.jmx.mbeanserver.MBeanIntrospector$MBeanInfoMap@795ead1e
+        at com.sun.jmx.mbeanserver.MBeanIntrospector.getMBeanInfo(MBeanIntrospector.java:392)
+        at com.sun.jmx.mbeanserver.MBeanSupport.<init>(MBeanSupport.java:139)
+        at com.sun.jmx.mbeanserver.StandardMBeanSupport.<init>(StandardMBeanSupport.java:60)
+        at javax.management.StandardMBean.construct(StandardMBean.java:181)
+        at javax.management.StandardMBean.<init>(StandardMBean.java:212)
+        at o.a.i.i.mxbean.IgniteStandardMXBean.<init>(IgniteStandardMXBean.java:78)
+        at o.a.i.i.util.IgniteUtils.registerMBean(IgniteUtils.java:4661)
+        at o.a.i.i.util.IgniteUtils.registerMBean(IgniteUtils.java:4636)
+        at o.a.i.i.IgniteKernal$MBeansManager.registerMBean(IgniteKernal.java:4407)
+        at o.a.i.i.IgniteKernal$MBeansManager.registerAllMBeans(IgniteKernal.java:4315)
+        at o.a.i.i.IgniteKernal$MBeansManager.access$200(IgniteKernal.java:4268)
+        at o.a.i.i.IgniteKernal.start(IgniteKernal.java:1151)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2038)
+        at o.a.i.i.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1730)
+        - locked o.a.i.i.IgnitionEx$IgniteNamedInstance@6d65f54d
+        at o.a.i.i.IgnitionEx.start0(IgnitionEx.java:1158)
+        at o.a.i.i.IgnitionEx.start(IgnitionEx.java:678)
+        at o.a.i.i.IgnitionEx.start(IgnitionEx.java:603)
+        at o.a.i.Ignition.start(Ignition.java:323)
+        at site.ycsb.db.ignite.IgniteAbstractClient.init(IgniteAbstractClient.java:132)
+        - locked java.util.concurrent.atomic.AtomicInteger@3b1fec48
+        at site.ycsb.DBWrapper.init(DBWrapper.java:86)
+        at site.ycsb.ClientThread.run(ClientThread.java:91)
+        at java.lang.Thread.run(Thread.java:748)
+
+Thread [name="Thread-2", id=13, state=TIMED_WAITING, blockCnt=0, waitCnt=4]
+    Lock [object=java.util.concurrent.CountDownLatch$Sync@432cba4e, ownerName=null, ownerId=-1]
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1037)
+        at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+        at java.util.concurrent.CountDownLatch.await(CountDownLatch.java:277)
+        at site.ycsb.StatusThread.waitForClientsUntil(StatusThread.java:199)
+        at site.ycsb.StatusThread.run(StatusThread.java:120)
+
+Thread [name="Signal Dispatcher", id=4, state=RUNNABLE, blockCnt=0, waitCnt=0]
+
+Thread [name="Finalizer", id=3, state=WAITING, blockCnt=30, waitCnt=4]
+    Lock [object=java.lang.ref.ReferenceQueue$Lock@241d3f99, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+        at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+Thread [name="Reference Handler", id=2, state=WAITING, blockCnt=3, waitCnt=3]
+    Lock [object=java.lang.ref.Reference$Lock@6024fafe, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Object.wait(Object.java:502)
+        at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+        at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+Thread [name="main", id=1, state=WAITING, blockCnt=0, waitCnt=1]
+    Lock [object=java.lang.Thread@7d68ef40, ownerName=null, ownerId=-1]
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Thread.join(Thread.java:1252)
+        at java.lang.Thread.join(Thread.java:1326)
+        at site.ycsb.Client.main(Client.java:354)
+
+
+
+[01:06:36][INFO ][Thread-5] Performance suggestions for grid 'YCSB client node' (fix if possible)
+[01:06:36][INFO ][Thread-5] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[01:06:36][INFO ][Thread-5]   ^-- Enable G1 Garbage Collector (add '-XX:+UseG1GC' to JVM options)
+[01:06:36][INFO ][Thread-5]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[01:06:36][INFO ][Thread-5]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[01:06:36][INFO ][Thread-5]   ^-- Disable processing of calls to System.gc() (add '-XX:+DisableExplicitGC' to JVM options)
+[01:06:36][INFO ][Thread-5] Refer to this page for more performance suggestions: https://apacheignite.readme.io/docs/jvm-and-system-tuning
+[01:06:36][INFO ][Thread-5] 
+[01:06:36][INFO ][Thread-5] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[01:06:36][INFO ][Thread-5] 
+
+>>> +----------------------------------------------------------------------+
+>>> Ignite ver. 2.7.0#20181130-sha1:256ae4012cb143b4855b598b740a6f3499ead4db
+>>> +----------------------------------------------------------------------+
+>>> OS name: Linux 4.9.0-11-amd64 amd64
+>>> CPU(s): 12
+>>> Heap: 14.0GB
+>>> VM name: 145@f85db5609a54
+>>> Ignite instance name: YCSB client node
+>>> Local node [ID=E7BD26C3-D7B4-4801-AE02-F04BCE6CDC41, order=14, clientMode=true]
+>>> Local node addresses: [f85db5609a54/127.0.0.1, /192.168.96.8]
+>>> Local ports: TCP:10800 TCP:47100 
+
+[01:06:36][INFO ][Thread-5] Topology snapshot [ver=14, locNode=e7bd26c3, servers=9, clients=1, state=ACTIVE, CPUs=120, offheap=110.0GB, heap=23.0GB]
+[01:06:36][INFO ][Thread-5] Activate Ignite cluster.
+[01:06:36][INFO ][Thread-5] Sending activate request from node [id=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41, topVer=AffinityTopologyVersion [topVer=15, minorTopVer=0], client=true, daemon=false]
+[01:06:36][INFO ][grid-nio-worker-tcp-comm-2-#34%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.96.8:58514, rmtAddr=5c209fc26f7c/192.168.96.10:47100]
+[01:06:36][INFO ][exchange-worker-#48%YCSB client node%] Started cache [name=usertable, id=358348515, memoryPolicyName=null, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false], encryptionEnabled=false]
+[01:06:36][INFO ][exchange-worker-#48%YCSB client node%] Finish proxy initialization, cacheName=usertable, localNodeId=e7bd26c3-d7b4-4801-ae02-f04bce6cdc41
+[01:06:36][INFO ][grid-nio-worker-tcp-comm-3-#35%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.96.8:41560, rmtAddr=ca998d650972/192.168.96.5:47100]
+[01:06:37][INFO ][grid-nio-worker-tcp-comm-4-#36%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.96.8:33848, rmtAddr=c36d35b4335a/192.168.96.12:47100]
+[01:06:37][INFO ][grid-nio-worker-tcp-comm-5-#37%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.96.8:36396, rmtAddr=d1000a043e99/192.168.96.4:47100]
+[01:06:37][INFO ][grid-nio-worker-tcp-comm-0-#32%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.96.8:45272, rmtAddr=8938c29000c9/192.168.96.7:47100]
+[01:06:37][INFO ][grid-nio-worker-tcp-comm-1-#33%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.96.8:36590, rmtAddr=b1dab1b68687/192.168.96.11:47100]
+[01:06:38][WARN ][ignite-update-notifier-timer] New version is available at ignite.apache.org: 2.9.1
+[01:06:44][INFO ][Thread-6] Stopped cache [cacheName=ignite-sys-cache]
+[01:06:44][INFO ][Thread-6] Stopped cache [cacheName=usertable]
+[01:06:44][INFO ][Thread-6] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 2.7.0#20181130-sha1:256ae4012cb143b4855b598b740a6f3499ead4db stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite instance name: YCSB client node
+>>> Grid uptime: 00:00:08.420
+
+
+[OVERALL], RunTime(ms), 53326
+[OVERALL], Throughput(ops/sec), 93.76289239770469
+[TOTAL_GCS_PS_Scavenge], Count, 3
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 28
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.05250721974271463
+[TOTAL_GCS_PS_MarkSweep], Count, 2
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 64
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.120016502269062
+[TOTAL_GCs], Count, 5
+[TOTAL_GC_TIME], Time(ms), 92
+[TOTAL_GC_TIME_%], Time(%), 0.17252372201177663
+[READ], Operations, 2509
+[READ], AverageLatency(us), 4155.8525308888
+[READ], MinLatency(us), 3450
+[READ], MaxLatency(us), 296191
+[READ], 95thPercentileLatency(us), 4371
+[READ], 99thPercentileLatency(us), 5795
+[READ], Return=OK, 2509
+[CLEANUP], Operations, 4
+[CLEANUP], AverageLatency(us), 19104.75
+[CLEANUP], MinLatency(us), 9
+[CLEANUP], MaxLatency(us), 76415
+[CLEANUP], 95thPercentileLatency(us), 76415
+[CLEANUP], 99thPercentileLatency(us), 76415
+[UPDATE], Operations, 2491
+[UPDATE], AverageLatency(us), 8552.888799678843
+[UPDATE], MinLatency(us), 6876
+[UPDATE], MaxLatency(us), 400383
+[UPDATE], 95thPercentileLatency(us), 8615
+[UPDATE], 99thPercentileLatency(us), 12391
+[UPDATE], Return=OK, 2491
