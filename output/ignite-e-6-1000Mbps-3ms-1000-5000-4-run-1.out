@@ -1,5 +1,5 @@
-[23:05:50][INFO ][Thread-5] Start Ignite client node.
-[23:05:51][INFO ][Thread-5] 
+[09:48:04][INFO ][Thread-5] Start Ignite client node.
+[09:48:05][INFO ][Thread-5] 
 
 >>>    __________  ________________  
 >>>   /  _/ ___/ |/ /  _/_  __/ __/  
@@ -11,62 +11,62 @@
 >>> 
 >>> Ignite documentation: http://ignite.apache.org
 
-[23:05:51][INFO ][Thread-5] Config URL: n/a
-[23:05:51][INFO ][Thread-5] IgniteConfiguration [igniteInstanceName=YCSB client node, pubPoolSize=12, svcPoolSize=12, callbackPoolSize=12, stripedPoolSize=12, sysPoolSize=12, mgmtPoolSize=4, igfsPoolSize=12, dataStreamerPoolSize=12, utilityCachePoolSize=12, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=12, igniteHome=null, igniteWorkDir=/tmp/ignite/work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@710726a3, nodeId=b1294ef9-c655-46c7-a0b3-a0a3d85ce131, marsh=BinaryMarshaller [], marshLocJobs=false, daemon=false, p2pEnabled=false, netTimeout=2000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$FirstConnectionPolicy@2dc72d08, enableForcibleNodeKill=false, enableTroubleshootingLog=false, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=6, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@6140ca7[Count = 1], stopping=false], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@764fdacc, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@3f079762, addrRslvr=null, encryptionSpi=org.apache.ignite.spi.encryption.noop.NoopEncryptionSpi@7798da11, clientMode=true, rebalanceThreadPoolSize=1, txCfg=TransactionConfiguration [txSerEnabled=false, dfltIsolation=REPEATABLE_READ, dfltConcurrency=PESSIMISTIC, dfltTxTimeout=0, txTimeoutOnPartitionMapExchange=0, pessimisticTxLogSize=0, pessimisticTxLogLinger=10000, tmLookupClsName=null, txManagerFactory=null, useJtaSync=false], cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, sysWorkerBlockedTimeout=null, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=ConnectorConfiguration [jettyPath=null, host=null, port=11211, noDelay=true, directBuf=false, sndBufSize=32768, rcvBufSize=32768, idleQryCurTimeout=600000, idleQryCurCheckFreq=60000, sndQueueLimit=0, selectorCnt=4, idleTimeout=7000, sslEnabled=false, sslClientAuth=false, sslCtxFactory=null, sslFactory=null, portRange=100, threadPoolSize=12, msgInterceptor=null], odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=null, activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=12, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], mvccVacuumThreadCnt=2, mvccVacuumFreq=5000, authEnabled=false, failureHnd=null, commFailureRslvr=null]
-[23:05:51][INFO ][Thread-5] Daemon mode: off
-[23:05:51][INFO ][Thread-5] OS: Linux 4.9.0-11-amd64 amd64
-[23:05:51][INFO ][Thread-5] OS user: root
-[23:05:51][INFO ][Thread-5] PID: 942
-[23:05:51][INFO ][Thread-5] Language runtime: Java Platform API Specification ver. 1.8
-[23:05:51][INFO ][Thread-5] VM information: OpenJDK Runtime Environment 1.8.0_282-b08 Oracle Corporation OpenJDK 64-Bit Server VM 25.282-b08
-[23:05:51][INFO ][Thread-5] VM total memory: 14.0GB
-[23:05:51][INFO ][Thread-5] Remote Management [restart: off, REST: off, JMX (remote: off)]
-[23:05:51][INFO ][Thread-5] Logger: Log4J2Logger [quiet=false, config=file:/opt/ycsb-0.17.0/ignite-binding/lib/ignite-binding-0.17.0.jar!/log4j2.xml]
-[23:05:51][INFO ][Thread-5] IGNITE_HOME=null
-[23:05:51][INFO ][Thread-5] VM arguments: []
-[23:05:51][INFO ][Thread-5] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
-[23:05:51][WARN ][Thread-5] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
-[23:05:51][INFO ][Thread-5] Configured plugins:
-[23:05:51][INFO ][Thread-5]   ^-- None
-[23:05:51][INFO ][Thread-5] 
-[23:05:51][INFO ][Thread-5] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED]]]]
-[23:05:51][INFO ][Thread-5] Successfully bound communication NIO server to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0, selectorsCnt=6, selectorSpins=0, pairedConn=false]
-[23:05:51][WARN ][Thread-5] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
-[23:05:51][WARN ][Thread-5] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
-[23:05:51][WARN ][Thread-5] Collision resolution is disabled (all jobs will be activated upon arrival).
-[23:05:51][INFO ][Thread-5] Security status [authentication=off, tls/ssl=off]
-[23:05:52][INFO ][Thread-5] Evict partition permits=3
-[23:05:52][INFO ][Thread-5] Client connector processor has started on TCP port 10800
-[23:05:52][INFO ][Thread-5] REST protocols do not start on client node. To start the protocols on client node set '-DIGNITE_REST_START_ON_CLIENT=true' system property.
-[23:05:52][INFO ][Thread-5] Non-loopback local IPs: 192.168.176.6
-[23:05:52][INFO ][Thread-5] Enabled local MACs: 0242C0A8B006
-[23:05:52][INFO ][disco-notifier-worker-#46%YCSB client node%] Assigned mvcc coordinator [crd=MvccCoordinator [nodeId=923df377-d095-4aca-8a46-263a203713d7, crdVer=1613948544847, topVer=AffinityTopologyVersion [topVer=26, minorTopVer=0]], crdNode=TcpDiscoveryNode [id=923df377-d095-4aca-8a46-263a203713d7, addrs=[127.0.0.1, 192.168.176.5], sockAddrs=[07bc591e8f21/192.168.176.5:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1613948752726, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false]]
-[23:05:52][INFO ][exchange-worker-#48%YCSB client node%] Started exchange init [topVer=AffinityTopologyVersion [topVer=26, minorTopVer=0], mvccCrd=MvccCoordinator [nodeId=923df377-d095-4aca-8a46-263a203713d7, crdVer=1613948544847, topVer=AffinityTopologyVersion [topVer=26, minorTopVer=0]], mvccCrdChange=true, crd=false, evt=NODE_JOINED, evtNode=b1294ef9-c655-46c7-a0b3-a0a3d85ce131, customEvt=null, allowMerge=true]
-[23:05:52][INFO ][exchange-worker-#48%YCSB client node%] Components activation performed in 0 ms.
-[23:05:53][INFO ][exchange-worker-#48%YCSB client node%] Started cache [name=ignite-sys-cache, id=-2100569601, memoryPolicyName=sysMemPlc, mode=REPLICATED, atomicity=TRANSACTIONAL, backups=2147483647, mvcc=false], encryptionEnabled=false]
-[23:05:53][INFO ][exchange-worker-#48%YCSB client node%] Starting caches on local join performed in 168 ms.
-[23:05:53][INFO ][grid-nio-worker-tcp-comm-0-#32%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.176.6:42956, rmtAddr=07bc591e8f21/192.168.176.5:47100]
-[23:05:53][INFO ][exchange-worker-#48%YCSB client node%] Sending Single Message performed in 27 ms.
-[23:05:53][INFO ][exchange-worker-#48%YCSB client node%] Finished exchange init [topVer=AffinityTopologyVersion [topVer=26, minorTopVer=0], crd=false]
-[23:05:53][INFO ][sys-#49%YCSB client node%] Received full message, will finish exchange [node=923df377-d095-4aca-8a46-263a203713d7, resVer=AffinityTopologyVersion [topVer=26, minorTopVer=0]]
-[23:05:53][INFO ][sys-#49%YCSB client node%] Affinity initialization on local join performed in 11 ms.
-[23:05:53][INFO ][sys-#49%YCSB client node%] Affinity changes applied in 11 ms.
-[23:05:53][INFO ][sys-#49%YCSB client node%] Full map updating for 2 groups performed in 1 ms.
-[23:05:53][INFO ][sys-#49%YCSB client node%] Finish exchange future [startVer=AffinityTopologyVersion [topVer=26, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=26, minorTopVer=0], err=null]
-[23:05:53][INFO ][sys-#49%YCSB client node%] Finish proxy initialization, cacheName=ignite-sys-cache, localNodeId=b1294ef9-c655-46c7-a0b3-a0a3d85ce131
-[23:05:53][INFO ][sys-#49%YCSB client node%] Completed partition exchange [localNode=b1294ef9-c655-46c7-a0b3-a0a3d85ce131, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=26, minorTopVer=0], evt=NODE_JOINED, evtNode=TcpDiscoveryNode [id=b1294ef9-c655-46c7-a0b3-a0a3d85ce131, addrs=[127.0.0.1, 192.168.176.6], sockAddrs=[/127.0.0.1:0, 36055d4a32ae/192.168.176.6:0], discPort=0, order=26, intOrder=0, lastExchangeTime=1613948752625, loc=true, ver=2.7.0#20181130-sha1:256ae401, isClient=true], done=true], topVer=AffinityTopologyVersion [topVer=26, minorTopVer=0], durationFromInit=293]
-[23:05:53][INFO ][exchange-worker-#48%YCSB client node%] Skipping rebalancing (no affinity changes) [top=AffinityTopologyVersion [topVer=26, minorTopVer=0], rebTopVer=AffinityTopologyVersion [topVer=-1, minorTopVer=0], evt=NODE_JOINED, evtNode=b1294ef9-c655-46c7-a0b3-a0a3d85ce131, client=true]
-[23:05:53][INFO ][grid-nio-worker-tcp-comm-1-#33%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.176.6:40430, rmtAddr=b88972ec8e85/192.168.176.3:47100]
-[23:05:53][INFO ][Thread-5] Performance suggestions for grid 'YCSB client node' (fix if possible)
-[23:05:53][INFO ][Thread-5] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
-[23:05:53][INFO ][Thread-5]   ^-- Enable G1 Garbage Collector (add '-XX:+UseG1GC' to JVM options)
-[23:05:53][INFO ][Thread-5]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
-[23:05:53][INFO ][Thread-5]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
-[23:05:53][INFO ][Thread-5]   ^-- Disable processing of calls to System.gc() (add '-XX:+DisableExplicitGC' to JVM options)
-[23:05:53][INFO ][Thread-5] Refer to this page for more performance suggestions: https://apacheignite.readme.io/docs/jvm-and-system-tuning
-[23:05:53][INFO ][Thread-5] 
-[23:05:53][INFO ][Thread-5] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
-[23:05:53][INFO ][Thread-5] 
+[09:48:05][INFO ][Thread-5] Config URL: n/a
+[09:48:05][INFO ][Thread-5] IgniteConfiguration [igniteInstanceName=YCSB client node, pubPoolSize=12, svcPoolSize=12, callbackPoolSize=12, stripedPoolSize=12, sysPoolSize=12, mgmtPoolSize=4, igfsPoolSize=12, dataStreamerPoolSize=12, utilityCachePoolSize=12, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=12, igniteHome=null, igniteWorkDir=/tmp/ignite/work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@710726a3, nodeId=b78f4a23-f84f-42a4-9c7e-5e7d0f9a4f07, marsh=BinaryMarshaller [], marshLocJobs=false, daemon=false, p2pEnabled=false, netTimeout=2000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$FirstConnectionPolicy@2dc72d08, enableForcibleNodeKill=false, enableTroubleshootingLog=false, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=6, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@6140ca7[Count = 1], stopping=false], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@764fdacc, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@3f079762, addrRslvr=null, encryptionSpi=org.apache.ignite.spi.encryption.noop.NoopEncryptionSpi@7798da11, clientMode=true, rebalanceThreadPoolSize=1, txCfg=TransactionConfiguration [txSerEnabled=false, dfltIsolation=REPEATABLE_READ, dfltConcurrency=PESSIMISTIC, dfltTxTimeout=0, txTimeoutOnPartitionMapExchange=0, pessimisticTxLogSize=0, pessimisticTxLogLinger=10000, tmLookupClsName=null, txManagerFactory=null, useJtaSync=false], cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, sysWorkerBlockedTimeout=null, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=ConnectorConfiguration [jettyPath=null, host=null, port=11211, noDelay=true, directBuf=false, sndBufSize=32768, rcvBufSize=32768, idleQryCurTimeout=600000, idleQryCurCheckFreq=60000, sndQueueLimit=0, selectorCnt=4, idleTimeout=7000, sslEnabled=false, sslClientAuth=false, sslCtxFactory=null, sslFactory=null, portRange=100, threadPoolSize=12, msgInterceptor=null], odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=null, activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=12, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], mvccVacuumThreadCnt=2, mvccVacuumFreq=5000, authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[09:48:05][INFO ][Thread-5] Daemon mode: off
+[09:48:05][INFO ][Thread-5] OS: Linux 4.9.0-11-amd64 amd64
+[09:48:05][INFO ][Thread-5] OS user: root
+[09:48:05][INFO ][Thread-5] PID: 942
+[09:48:05][INFO ][Thread-5] Language runtime: Java Platform API Specification ver. 1.8
+[09:48:05][INFO ][Thread-5] VM information: OpenJDK Runtime Environment 1.8.0_282-b08 Oracle Corporation OpenJDK 64-Bit Server VM 25.282-b08
+[09:48:05][INFO ][Thread-5] VM total memory: 14.0GB
+[09:48:05][INFO ][Thread-5] Remote Management [restart: off, REST: off, JMX (remote: off)]
+[09:48:05][INFO ][Thread-5] Logger: Log4J2Logger [quiet=false, config=file:/opt/ycsb-0.17.0/ignite-binding/lib/ignite-binding-0.17.0.jar!/log4j2.xml]
+[09:48:05][INFO ][Thread-5] IGNITE_HOME=null
+[09:48:05][INFO ][Thread-5] VM arguments: []
+[09:48:05][INFO ][Thread-5] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[09:48:05][WARN ][Thread-5] Please set system property '-Djava.net.preferIPv4Stack=true' to avoid possible problems in mixed environments.
+[09:48:05][INFO ][Thread-5] Configured plugins:
+[09:48:05][INFO ][Thread-5]   ^-- None
+[09:48:05][INFO ][Thread-5] 
+[09:48:05][INFO ][Thread-5] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0, super=AbstractFailureHandler [ignoredFailureTypes=[SYSTEM_WORKER_BLOCKED]]]]
+[09:48:05][INFO ][Thread-5] Successfully bound communication NIO server to TCP port [port=47100, locHost=0.0.0.0/0.0.0.0, selectorsCnt=6, selectorSpins=0, pairedConn=false]
+[09:48:05][WARN ][Thread-5] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[09:48:05][WARN ][Thread-5] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[09:48:05][WARN ][Thread-5] Collision resolution is disabled (all jobs will be activated upon arrival).
+[09:48:05][INFO ][Thread-5] Security status [authentication=off, tls/ssl=off]
+[09:48:05][INFO ][Thread-5] Evict partition permits=3
+[09:48:06][INFO ][Thread-5] Client connector processor has started on TCP port 10800
+[09:48:06][INFO ][Thread-5] REST protocols do not start on client node. To start the protocols on client node set '-DIGNITE_REST_START_ON_CLIENT=true' system property.
+[09:48:06][INFO ][Thread-5] Non-loopback local IPs: 192.168.128.6
+[09:48:06][INFO ][Thread-5] Enabled local MACs: 0242C0A88006
+[09:48:06][INFO ][disco-notifier-worker-#46%YCSB client node%] Assigned mvcc coordinator [crd=MvccCoordinator [nodeId=8e68d557-c2e9-47fd-8676-0968dbbbc2fc, crdVer=1614073481675, topVer=AffinityTopologyVersion [topVer=25, minorTopVer=0]], crdNode=TcpDiscoveryNode [id=8e68d557-c2e9-47fd-8676-0968dbbbc2fc, addrs=[127.0.0.1, 192.168.128.4], sockAddrs=[fe30cda9ae63/192.168.128.4:47500, /127.0.0.1:47500], discPort=47500, order=1, intOrder=1, lastExchangeTime=1614073686392, loc=false, ver=2.7.0#20181130-sha1:256ae401, isClient=false]]
+[09:48:06][INFO ][exchange-worker-#48%YCSB client node%] Started exchange init [topVer=AffinityTopologyVersion [topVer=25, minorTopVer=0], mvccCrd=MvccCoordinator [nodeId=8e68d557-c2e9-47fd-8676-0968dbbbc2fc, crdVer=1614073481675, topVer=AffinityTopologyVersion [topVer=25, minorTopVer=0]], mvccCrdChange=true, crd=false, evt=NODE_JOINED, evtNode=b78f4a23-f84f-42a4-9c7e-5e7d0f9a4f07, customEvt=null, allowMerge=true]
+[09:48:06][INFO ][exchange-worker-#48%YCSB client node%] Components activation performed in 1 ms.
+[09:48:06][INFO ][exchange-worker-#48%YCSB client node%] Started cache [name=ignite-sys-cache, id=-2100569601, memoryPolicyName=sysMemPlc, mode=REPLICATED, atomicity=TRANSACTIONAL, backups=2147483647, mvcc=false], encryptionEnabled=false]
+[09:48:06][INFO ][exchange-worker-#48%YCSB client node%] Starting caches on local join performed in 163 ms.
+[09:48:06][INFO ][grid-nio-worker-tcp-comm-0-#32%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.128.6:51680, rmtAddr=fe30cda9ae63/192.168.128.4:47100]
+[09:48:06][INFO ][exchange-worker-#48%YCSB client node%] Sending Single Message performed in 30 ms.
+[09:48:06][INFO ][exchange-worker-#48%YCSB client node%] Finished exchange init [topVer=AffinityTopologyVersion [topVer=25, minorTopVer=0], crd=false]
+[09:48:06][INFO ][sys-#49%YCSB client node%] Received full message, will finish exchange [node=8e68d557-c2e9-47fd-8676-0968dbbbc2fc, resVer=AffinityTopologyVersion [topVer=25, minorTopVer=0]]
+[09:48:06][INFO ][sys-#49%YCSB client node%] Affinity initialization on local join performed in 11 ms.
+[09:48:06][INFO ][sys-#49%YCSB client node%] Affinity changes applied in 11 ms.
+[09:48:06][INFO ][sys-#49%YCSB client node%] Full map updating for 2 groups performed in 2 ms.
+[09:48:06][INFO ][sys-#49%YCSB client node%] Finish exchange future [startVer=AffinityTopologyVersion [topVer=25, minorTopVer=0], resVer=AffinityTopologyVersion [topVer=25, minorTopVer=0], err=null]
+[09:48:06][INFO ][sys-#49%YCSB client node%] Finish proxy initialization, cacheName=ignite-sys-cache, localNodeId=b78f4a23-f84f-42a4-9c7e-5e7d0f9a4f07
+[09:48:06][INFO ][sys-#49%YCSB client node%] Completed partition exchange [localNode=b78f4a23-f84f-42a4-9c7e-5e7d0f9a4f07, exchange=GridDhtPartitionsExchangeFuture [topVer=AffinityTopologyVersion [topVer=25, minorTopVer=0], evt=NODE_JOINED, evtNode=TcpDiscoveryNode [id=b78f4a23-f84f-42a4-9c7e-5e7d0f9a4f07, addrs=[127.0.0.1, 192.168.128.6], sockAddrs=[/127.0.0.1:0, 962c05e9e43a/192.168.128.6:0], discPort=0, order=25, intOrder=0, lastExchangeTime=1614073686271, loc=true, ver=2.7.0#20181130-sha1:256ae401, isClient=true], done=true], topVer=AffinityTopologyVersion [topVer=25, minorTopVer=0], durationFromInit=293]
+[09:48:06][INFO ][exchange-worker-#48%YCSB client node%] Skipping rebalancing (no affinity changes) [top=AffinityTopologyVersion [topVer=25, minorTopVer=0], rebTopVer=AffinityTopologyVersion [topVer=-1, minorTopVer=0], evt=NODE_JOINED, evtNode=b78f4a23-f84f-42a4-9c7e-5e7d0f9a4f07, client=true]
+[09:48:06][INFO ][grid-nio-worker-tcp-comm-1-#33%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.128.6:48158, rmtAddr=83e1e0b71c1e/192.168.128.7:47100]
+[09:48:06][INFO ][Thread-5] Performance suggestions for grid 'YCSB client node' (fix if possible)
+[09:48:06][INFO ][Thread-5] To disable, set -DIGNITE_PERFORMANCE_SUGGESTIONS_DISABLED=true
+[09:48:06][INFO ][Thread-5]   ^-- Enable G1 Garbage Collector (add '-XX:+UseG1GC' to JVM options)
+[09:48:06][INFO ][Thread-5]   ^-- Specify JVM heap max size (add '-Xmx<size>[g|G|m|M|k|K]' to JVM options)
+[09:48:06][INFO ][Thread-5]   ^-- Set max direct memory size if getting 'OOME: Direct buffer memory' (add '-XX:MaxDirectMemorySize=<size>[g|G|m|M|k|K]' to JVM options)
+[09:48:06][INFO ][Thread-5]   ^-- Disable processing of calls to System.gc() (add '-XX:+DisableExplicitGC' to JVM options)
+[09:48:06][INFO ][Thread-5] Refer to this page for more performance suggestions: https://apacheignite.readme.io/docs/jvm-and-system-tuning
+[09:48:06][INFO ][Thread-5] 
+[09:48:06][INFO ][Thread-5] To start Console Management & Monitoring run ignitevisorcmd.{sh|bat}
+[09:48:06][INFO ][Thread-5] 
 
 >>> +----------------------------------------------------------------------+
 >>> Ignite ver. 2.7.0#20181130-sha1:256ae4012cb143b4855b598b740a6f3499ead4db
@@ -74,65 +74,66 @@
 >>> OS name: Linux 4.9.0-11-amd64 amd64
 >>> CPU(s): 12
 >>> Heap: 14.0GB
->>> VM name: 942@36055d4a32ae
+>>> VM name: 942@962c05e9e43a
 >>> Ignite instance name: YCSB client node
->>> Local node [ID=B1294EF9-C655-46C7-A0B3-A0A3D85CE131, order=26, clientMode=true]
->>> Local node addresses: [36055d4a32ae/127.0.0.1, /192.168.176.6]
+>>> Local node [ID=B78F4A23-F84F-42A4-9C7E-5E7D0F9A4F07, order=25, clientMode=true]
+>>> Local node addresses: [962c05e9e43a/127.0.0.1, /192.168.128.6]
 >>> Local ports: TCP:10800 TCP:47100 
 
-[23:05:53][INFO ][Thread-5] Topology snapshot [ver=26, locNode=b1294ef9, servers=5, clients=1, state=ACTIVE, CPUs=72, offheap=63.0GB, heap=19.0GB]
-[23:05:53][INFO ][Thread-5] Activate Ignite cluster.
-[23:05:53][INFO ][Thread-5] Sending activate request from node [id=b1294ef9-c655-46c7-a0b3-a0a3d85ce131, topVer=AffinityTopologyVersion [topVer=26, minorTopVer=0], client=true, daemon=false]
-[23:05:53][INFO ][grid-nio-worker-tcp-comm-2-#34%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.176.6:37414, rmtAddr=efe5ff8b8d4a/192.168.176.8:47100]
-[23:05:53][INFO ][exchange-worker-#48%YCSB client node%] Started cache [name=usertable, id=358348515, memoryPolicyName=null, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false], encryptionEnabled=false]
-[23:05:53][INFO ][grid-nio-worker-tcp-comm-3-#35%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.176.6:58972, rmtAddr=571c8ebc1089/192.168.176.2:47100]
-[23:05:53][INFO ][exchange-worker-#48%YCSB client node%] Finish proxy initialization, cacheName=usertable, localNodeId=b1294ef9-c655-46c7-a0b3-a0a3d85ce131
-[23:05:53][INFO ][grid-nio-worker-tcp-comm-4-#36%YCSB client node%] Accepted incoming communication connection [locAddr=/192.168.176.6:47100, rmtAddr=/192.168.176.7:37524]
-[23:05:53][INFO ][Thread-5] Stopped cache [cacheName=ignite-sys-cache]
-[23:05:53][INFO ][Thread-5] Stopped cache [cacheName=usertable]
-[23:05:53][INFO ][Thread-5] 
+[09:48:06][INFO ][Thread-5] Topology snapshot [ver=25, locNode=b78f4a23, servers=6, clients=1, state=ACTIVE, CPUs=84, offheap=75.0GB, heap=20.0GB]
+[09:48:06][INFO ][Thread-5] Activate Ignite cluster.
+[09:48:06][INFO ][Thread-5] Sending activate request from node [id=b78f4a23-f84f-42a4-9c7e-5e7d0f9a4f07, topVer=AffinityTopologyVersion [topVer=25, minorTopVer=0], client=true, daemon=false]
+[09:48:07][INFO ][exchange-worker-#48%YCSB client node%] Started cache [name=usertable, id=358348515, memoryPolicyName=null, mode=PARTITIONED, atomicity=ATOMIC, backups=1, mvcc=false], encryptionEnabled=false]
+[09:48:07][INFO ][grid-nio-worker-tcp-comm-2-#34%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.128.6:59442, rmtAddr=fc8e76130016/192.168.128.2:47100]
+[09:48:07][INFO ][exchange-worker-#48%YCSB client node%] Finish proxy initialization, cacheName=usertable, localNodeId=b78f4a23-f84f-42a4-9c7e-5e7d0f9a4f07
+[09:48:07][INFO ][grid-nio-worker-tcp-comm-3-#35%YCSB client node%] Accepted incoming communication connection [locAddr=/192.168.128.6:47100, rmtAddr=/192.168.128.8:39328]
+[09:48:07][INFO ][grid-nio-worker-tcp-comm-4-#36%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.128.6:40340, rmtAddr=6d0fe71922eb/192.168.128.3:47100]
+[09:48:07][INFO ][grid-nio-worker-tcp-comm-5-#37%YCSB client node%] Established outgoing communication connection [locAddr=/192.168.128.6:38934, rmtAddr=7bf755f4d96a/192.168.128.5:47100]
+[09:48:07][INFO ][Thread-6] Stopped cache [cacheName=ignite-sys-cache]
+[09:48:07][INFO ][Thread-6] Stopped cache [cacheName=usertable]
+[09:48:07][INFO ][Thread-6] 
 
 >>> +---------------------------------------------------------------------------------+
 >>> Ignite ver. 2.7.0#20181130-sha1:256ae4012cb143b4855b598b740a6f3499ead4db stopped OK
 >>> +---------------------------------------------------------------------------------+
 >>> Ignite instance name: YCSB client node
->>> Grid uptime: 00:00:00.670
+>>> Grid uptime: 00:00:00.606
 
 
-[OVERALL], RunTime(ms), 3209
-[OVERALL], Throughput(ops/sec), 311.6235587410408
+[OVERALL], RunTime(ms), 2790
+[OVERALL], Throughput(ops/sec), 358.42293906810033
 [TOTAL_GCS_PS_Scavenge], Count, 2
-[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 15
-[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.46743533811156124
+[TOTAL_GC_TIME_PS_Scavenge], Time(ms), 23
+[TOTAL_GC_TIME_%_PS_Scavenge], Time(%), 0.8243727598566308
 [TOTAL_GCS_PS_MarkSweep], Count, 1
-[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 25
-[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.7790588968526021
+[TOTAL_GC_TIME_PS_MarkSweep], Time(ms), 24
+[TOTAL_GC_TIME_%_PS_MarkSweep], Time(%), 0.8602150537634409
 [TOTAL_GCs], Count, 3
-[TOTAL_GC_TIME], Time(ms), 40
-[TOTAL_GC_TIME_%], Time(%), 1.2464942349641632
-[SCAN-FAILED], Operations, 942
-[SCAN-FAILED], AverageLatency(us), 7.006369426751593
-[SCAN-FAILED], MinLatency(us), 3
-[SCAN-FAILED], MaxLatency(us), 637
+[TOTAL_GC_TIME], Time(ms), 47
+[TOTAL_GC_TIME_%], Time(%), 1.6845878136200716
+[SCAN-FAILED], Operations, 943
+[SCAN-FAILED], AverageLatency(us), 6.498409331919406
+[SCAN-FAILED], MinLatency(us), 4
+[SCAN-FAILED], MaxLatency(us), 688
 [SCAN-FAILED], 95thPercentileLatency(us), 5
 [SCAN-FAILED], 99thPercentileLatency(us), 7
 [CLEANUP], Operations, 4
-[CLEANUP], AverageLatency(us), 8926.25
-[CLEANUP], MinLatency(us), 9
-[CLEANUP], MaxLatency(us), 35679
-[CLEANUP], 95thPercentileLatency(us), 35679
-[CLEANUP], 99thPercentileLatency(us), 35679
-[INSERT], Operations, 58
-[INSERT], AverageLatency(us), 13367.103448275862
-[INSERT], MinLatency(us), 7488
-[INSERT], MaxLatency(us), 221183
-[INSERT], 95thPercentileLatency(us), 25167
-[INSERT], 99thPercentileLatency(us), 26527
-[INSERT], Return=OK, 58
+[CLEANUP], AverageLatency(us), 12516.0
+[CLEANUP], MinLatency(us), 8
+[CLEANUP], MaxLatency(us), 50047
+[CLEANUP], 95thPercentileLatency(us), 50047
+[CLEANUP], 99thPercentileLatency(us), 50047
+[INSERT], Operations, 57
+[INSERT], AverageLatency(us), 12747.438596491229
+[INSERT], MinLatency(us), 7436
+[INSERT], MaxLatency(us), 220031
+[INSERT], 95thPercentileLatency(us), 20463
+[INSERT], 99thPercentileLatency(us), 39935
+[INSERT], Return=OK, 57
 [SCAN], Operations, 0
 [SCAN], AverageLatency(us), NaN
 [SCAN], MinLatency(us), 9223372036854775807
 [SCAN], MaxLatency(us), 0
 [SCAN], 95thPercentileLatency(us), 0
 [SCAN], 99thPercentileLatency(us), 0
-[SCAN], Return=NOT_IMPLEMENTED, 942
+[SCAN], Return=NOT_IMPLEMENTED, 943
