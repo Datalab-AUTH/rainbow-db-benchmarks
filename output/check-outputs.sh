@@ -1,5 +1,7 @@
 #!/bin/bash
 
+NODES_LIST=${NODES_LIST:-"6 10 14 20"}
+
 EMPTY_FILES=`find ./ -name "*.out" -size 0 | wc -l`
 if [ $EMPTY_FILES -ge 0 ]; then
 	echo "====================="
@@ -17,7 +19,7 @@ if [ $NO_RESULTS -ge 0 ]; then
 fi
 
 N=0
-for nodes in 6 10 14 20; do
+for nodes in $NODES_LIST; do
 	NEW=$( grep "Topology snap" ignite*-$nodes-* 2> /dev/null | \
 		grep -v "servers=$nodes" | \
 		sed "s/\(.*\)out:\(.*\)/\1out/" | wc -l )
@@ -27,9 +29,11 @@ if [ $N -ge 0 ]; then
 	echo "=============================================="
 	echo "Ignite files with wrong number of nodes: $N"
 	echo "=============================================="
+	for nodes in $NODES_LIST; do
 		grep "Topology snap" ignite*-$nodes-* 2> /dev/null | \
 			grep -v "servers=$nodes" | \
 			sed "s/\(.*\)out:\(.*\)/\1out/"
+	done
 fi
 
 EXC=`grep -l Exception *.out | wc -l`
