@@ -32,10 +32,10 @@ if [ $N -ge 0 ]; then
 			sed "s/\(.*\)out:\(.*\)/\1out/"
 fi
 
-NAN=`grep -l NaN *.out | wc -l`
-if [ $NAN -ge 0 ]; then
+EXC=`grep -l Exception *.out | wc -l`
+if [ $EXC -ge 0 ]; then
 	echo "==============================="
-	echo "Files with NaN values: $NAN
+	echo "Files with exceptions: $EXC"
 	echo "==============================="
-	grep -l NaN *.out
+	grep -l Exception *.out
 fi
