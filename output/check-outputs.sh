@@ -26,3 +26,8 @@ echo "=============================================="
 		grep -v "servers=$nodes" | \
 		sed "s/\(.*\)out:\(.*\)/\1out/"
 
+NAN=`grep -l NaN *.out | wc -l`
+echo "==============================="
+echo "Files with NaN values: $NO_RESULTS"
+echo "==============================="
+grep -l NaN *.out
