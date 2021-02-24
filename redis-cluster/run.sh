@@ -61,7 +61,7 @@ if [ $BANDWIDTH -ne 0 ]; then
 fi
 
 # apply configuration to nodes and start them
-REDIS_CLI_OPTS=" --cluster create"
+REDIS_CLI_OPTS=" --cluster create --cluster-yes "
 for i in `seq $NODES`; do
 	# create the list of nodes to put into the configuration file.
 	# Current node goes first.
@@ -71,7 +71,7 @@ for i in `seq $NODES`; do
 	REDIS_CLI_OPTS="$REDIS_CLI_OPTS ${IP}:6379"
 done
 if [ $REPLICAS -gt 0 ]; then
-	REDIS_CLI_OPTS="$REDIS_CLI_OPTS --cluster-yes"
+	REDIS_CLI_OPTS="$REDIS_CLI_OPTS --cluster-replicas $REPLICAS"
 fi
 echo redis-cli $REDIS_CLI_OPTS
 
